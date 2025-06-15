@@ -29,11 +29,12 @@
                     <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
                         data-wow-delay="0">
                         <div class="banner-icon">
-                            <img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-1.svg" alt="" />
+                            <img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-1.png" alt="" />
                         </div>
                         <div class="banner-text">
-                            <h3 class="icon-box-title">Best prices & offers</h3>
-                            <p>Orders $50 or more</p>
+                            <h3 class="icon-box-title">Meilleurs prix et offres</h3>
+<p>Pour les commandes à partir de 50 DT</p>
+
                         </div>
                     </div>
                 </div>
@@ -41,48 +42,55 @@
                     <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
                         data-wow-delay=".1s">
                         <div class="banner-icon">
-                            <img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-2.svg" alt="" />
+                            <img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-2.png" alt="" />
                         </div>
                         <div class="banner-text">
-                            <h3 class="icon-box-title">Free delivery</h3>
-                            <p>24/7 amazing services</p>
+                            <h3 class="icon-box-title">Livraison gratuite assurée</h3>
+                            <p>Service client 24h/24 et 7j/7</p>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
                         data-wow-delay=".2s">
                         <div class="banner-icon">
-                            <img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-3.svg" alt="" />
+                            <img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-3.png" alt="" />
                         </div>
                         <div class="banner-text">
-                            <h3 class="icon-box-title">Great daily deal</h3>
-                            <p>When you sign up</p>
+                            <h3 class="icon-box-title">Offre locale exclusive du jour</h3>
+                            <p>Réservée uniquement aux membres inscrits</p>
                         </div>
+                        
+                        
                     </div>
                 </div>
                 <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
                         data-wow-delay=".3s">
                         <div class="banner-icon">
-                            <img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-4.svg" alt="" />
+                            <img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-4.png" alt="" />
                         </div>
                         <div class="banner-text">
-                            <h3 class="icon-box-title">Wide assortment</h3>
-                            <p>Mega Discounts</p>
+                            <h3 class="icon-box-title">Large assortiment local de qualité</h3>
+                            <p>Remises spéciales et imbattables</p>
                         </div>
+                        
+                        
                     </div>
                 </div>
                 <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
                         data-wow-delay=".4s">
                         <div class="banner-icon">
-                            <img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-5.svg" alt="" />
+                            <img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-5.png" alt="" />
                         </div>
                         <div class="banner-text">
-                            <h3 class="icon-box-title">Easy returns</h3>
-                            <p>Within 30 days</p>
+                            <h3 class="icon-box-title">Retours simples et garantis facilement</h3>
+                            <p>Valable sous 30 jours seulement</p>
                         </div>
+                        
+                        
                     </div>
                 </div>
                 <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-none">

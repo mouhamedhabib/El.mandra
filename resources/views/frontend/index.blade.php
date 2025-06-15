@@ -174,12 +174,12 @@
                                 <div class="product-card-bottom">
                                     @if($product->discount)
                                     <div class="product-price">
-                                        <span>${{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }}</span>
-                                        <span class="old-price">${{ number_format($product->selling_price, 2) }}</span>
+                                        <span>{{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }} dt</span>
+                                        <span class="old-price">{{ number_format($product->selling_price, 2) }} dt</span>
                                     </div>
                                     @else
                                     <div class="product-price">
-                                        <span>${{ number_format($product->selling_price, 2) }}</span>
+                                        <span>{{ number_format($product->selling_price, 2) }} dt</span>
                                     </div>
                                     @endif
                                     <div class="add-cart">
@@ -264,12 +264,12 @@
                                 <div class="product-card-bottom">
                                     @if($product->discount)
                                     <div class="product-price">
-                                        <span>${{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }}</span>
-                                        <span class="old-price">${{ number_format($product->selling_price, 2) }}</span>
+                                        <span>{{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }} dt</span>
+                                        <span class="old-price">{{ number_format($product->selling_price, 2) }} dt</span>
                                     </div>
                                     @else
                                     <div class="product-price">
-                                        <span>${{ number_format($product->selling_price, 2) }}</span>
+                                        <span>{{ number_format($product->selling_price, 2) }} dt</span>
                                     </div>
                                     @endif
                                     <div class="add-cart">
@@ -299,7 +299,7 @@
             <div class="col-lg-3 d-none d-lg-flex wow animate__animated animate__fadeIn">
                 <div class="banner-img style-2">
                     <div class="banner-text">
-                        <h2 class="mb-100">Bring nature into your home</h2>
+                        <h2 class="mb-100">عولة الدار... ذوقها حكاية  وسرّها في المحبّة</h2>
                         {{-- Link to the first category from $categories_with_products or $categories as fallback --}}
                         <a href="{{ isset($categories_with_products[0]) ? route('product_by_category', $categories_with_products[0]->id) : (isset($categories[0]) ? route('product_by_category', $categories[0]->id) : '#') }}" class="btn btn-xs">
                             Shop Now <i class="fi-rs-arrow-small-right"></i>
@@ -377,12 +377,12 @@
                                         <div class="product-card-bottom">
                                             @if($featured_product->discount)
                                             <div class="product-price">
-                                                <span>${{ number_format($featured_product->selling_price - ($featured_product->selling_price * ($featured_product->discount / 100)), 2) }}</span>
-                                                <span class="old-price">${{ number_format($featured_product->selling_price, 2) }}</span>
+                                                <span>{{ number_format($featured_product->selling_price - ($featured_product->selling_price * ($featured_product->discount / 100)), 2) }} dt</span>
+                                                <span class="old-price">{{ number_format($featured_product->selling_price, 2) }} dt</span>
                                             </div>
                                             @else
                                             <div class="product-price">
-                                                <span>${{ number_format($featured_product->selling_price, 2) }}</span>
+                                                <span>{{ number_format($featured_product->selling_price, 2) }} dt</span>
                                             </div>
                                             @endif
                                             <div class="add-cart">
@@ -476,12 +476,12 @@
                                 <div class="product-card-bottom">
                                     @if($product->discount)
                                     <div class="product-price">
-                                        <span>${{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }}</span>
-                                        <span class="old-price">${{ number_format($product->selling_price, 2) }}</span>
+                                        <span>{{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }} dt</span>
+                                        <span class="old-price">{{ number_format($product->selling_price, 2) }} dt</span>
                                     </div>
                                     @else
                                     <div class="product-price">
-                                        <span>${{ number_format($product->selling_price, 2) }}</span>
+                                        <span>{{ number_format($product->selling_price, 2) }} dt</span>
                                     </div>
                                     @endif
                                     <div class="add-cart">
@@ -502,8 +502,8 @@
 @endforeach
 <!--End CAtegory with products -->
 
-<section class="section-padding mb-30">
-    <div class="container">
+<section class="section-padding mb-30"style="display: none;">
+    <div class="container" >
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-delay="0">
