@@ -12,7 +12,7 @@
                             <p class="mb-45">Start You'r Daily Shopping with <span class="text-brand">Nest
                                     Mart</span></p>
                             <form class="form-subcriber d-flex">
-                                <input type="email" placeholder="Your emaill address" />
+                                <input type="email" placeholder="Votre adresse email" />
                                 <button class="btn" type="submit">Subscribe</button>
                             </form>
                         </div>
