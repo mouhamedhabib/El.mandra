@@ -26,6 +26,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/test', function () {
+    abort(503);
+});
 
 
 
@@ -144,3 +147,5 @@ Route::get('/vendor-list', [HomeController::class, 'vendor_list'])->name('vendor
 Route::get('/category/{category}', [HomeController::class, 'product_by_category'])->name('product_by_category');
 Route::get('/{vendor}', [HomeController::class, 'vendor_details'])->name('vendor_details');
 Route::get('/{product}/{slug}', [FrontendProductController::class, 'product_details'])->name('product_details');
+
+
