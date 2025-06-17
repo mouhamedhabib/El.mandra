@@ -13,7 +13,7 @@
                             
                             <form class="form-subcriber d-flex">
                                 <input type="email" placeholder="Votre adresse email" />
-                                <button class="btn" type="submit">Subscribe</button>
+                                <button class="btn" type="submit">S'abonner</button>
                             </form>
                         </div>
                         <img src="{{asset('frontend')}}/assets/imgs/banner/banner-9.png" alt="newsletter" />

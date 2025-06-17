@@ -18,7 +18,7 @@
                     <div class="sidebar-widget-2 widget_search mb-50">
                         <div class="search-form">
                             <form action="#">
-                                <input type="text" placeholder="Search vendors (by name or ID)..." />
+                                <input type="text" placeholder="Rechercher des fournisseurs (par nom )..." />
                                 <button type="submit"><i class="fi-rs-search"></i></button>
                             </form>
                         </div>
@@ -30,13 +30,14 @@
             <div class="col-12 col-lg-8 mx-auto">
                 <div class="shop-product-fillter">
                     <div class="totall-product">
-                        <p>We have <strong class="text-brand">{{ $vendors->count() }}</strong> vendors now</p>
+                        <p>Nous avons actuellement <strong class="text-brand">{{ $vendors->count() }}</strong> fournisseurs</p>
                     </div>
+                    
                     <div class="sort-by-product-area">
                         <div class="sort-by-cover mr-10">
                             <div class="sort-by-product-wrap">
                                 <div class="sort-by">
-                                    <span><i class="fi-rs-apps"></i>Show:</span>
+                                    <span><i class="fi-rs-apps"></i>Afficher:</span>
                                 </div>
                                 <div class="sort-by-dropdown-wrap">
                                     <span> 50 <i class="fi-rs-angle-small-down"></i></span>
@@ -55,7 +56,7 @@
                         <div class="sort-by-cover">
                             <div class="sort-by-product-wrap">
                                 <div class="sort-by">
-                                    <span><i class="fi-rs-apps-sort"></i>Sort by:</span>
+                                    <span><i class="fi-rs-apps-sort"></i>Trier par                                        :</span>
                                 </div>
                                 <div class="sort-by-dropdown-wrap">
                                     <span> Featured <i class="fi-rs-angle-small-down"></i></span>
@@ -117,12 +118,12 @@
                         <div class="vendor-info mb-30">
                             <ul class="contact-infor text-muted">
                                 <li><img src="{{ asset('frontend') }}/assets/imgs/theme/icons/icon-location.svg"
-                                        alt="" /><strong>Address:
+                                        alt="" /><strong>Adresse:
                                     </strong> <span>{{ $vendor->address }}</span>
                                 </li>
                                 <li><img src="{{ asset('frontend') }}/assets/imgs/theme/icons/icon-contact.svg"
-                                        alt="" /><strong>Call
-                                        Us:</strong><span>{{ $vendor->phone }}</span></li>
+                                        alt="" /><strong>Appelez-nous
+                                            :</strong><span>{{ $vendor->phone }}</span></li>
                             </ul>
                         </div>
                         <a href="{{ route('vendor_details',$vendor->id) }}" class="btn btn-xs">Visit Store <i

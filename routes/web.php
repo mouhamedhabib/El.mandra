@@ -11,6 +11,8 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\SubCategoryController;
 use App\Http\Controllers\Auth\VendorRegisterController;
+use App\Http\Controllers\BlogControoler;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Frontend\CartController;
 use App\Http\Controllers\Frontend\FrontendProductController;
 use App\Http\Controllers\Frontend\HomeController;
@@ -106,6 +108,8 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
 });
 
      Route::get('/about' , [AboutController::class, 'index'])->name('about');
+     Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+     Route::get('/blog', [BlogControoler::class, 'index'])->name('blog');
 
 Route::get('/admin/login', [AdminController::class, 'login'])->middleware('guest');
 

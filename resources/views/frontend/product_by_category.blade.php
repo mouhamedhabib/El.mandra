@@ -8,9 +8,10 @@
                 <div class="col-xl-3">
                     <h1 class="mb-15">{{ $category->name }}</h1>
                     <div class="breadcrumb">
-                        <a href="/" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
-                        <span></span> Shop <span></span> {{ $category->name }}
+                        <a href="/" rel="nofollow"><i class="fi-rs-home mr-5"></i>Accueil</a>
+                        <span></span> Boutique <span></span> {{ $category->name }}
                     </div>
+                    
                 </div>
 
             </div>
@@ -22,13 +23,14 @@
         <div class="col-lg-4-5">
             <div class="shop-product-fillter">
                 <div class="totall-product">
-                    <p>We found <strong class="text-brand">{{ $products->count() }}</strong> items for you!</p>
+                    <p>Nous avons trouvé <strong class="text-brand">{{ $products->count() }}</strong> articles pour vous !</p>
+
                 </div>
                 <div class="sort-by-product-area">
                     <div class="sort-by-cover mr-10">
                         <div class="sort-by-product-wrap">
                             <div class="sort-by">
-                                <span><i class="fi-rs-apps"></i>Show:</span>
+                                <span><i class="fi-rs-apps"></i>Afficher:</span>
                             </div>
                             <div class="sort-by-dropdown-wrap">
                                 <span> 50 <i class="fi-rs-angle-small-down"></i></span>
@@ -133,18 +135,18 @@
 
                                 @if($product->discount)
                                 <div class="product-price">
-                                    <span>${{ $product->selling_price - ($product->selling_price *
-                                        ($product->discount / 100)) }}</span>
-                                    <span class="old-price">${{ $product->selling_price
-                                        }}</span>
+                                    <span>{{ $product->selling_price - ($product->selling_price *
+                                        ($product->discount / 100)) }} Dt</span>
+                                    <span class="old-price">{{ $product->selling_price
+                                        }}Dt</span>
                                 </div>
                                 @else
                                 <div class="product-price">
-                                    <span>${{ $product->selling_price }}
+                                    <span>Dt{{ $product->selling_price }}
                                 </div>
                                 @endif
                                 <div class="add-cart">
-                                    <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add
+                                    <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Ajouter
                                     </a>
                                 </div>
                             </div>
@@ -197,7 +199,7 @@
                 </ul>
             </div>
             <!-- Fillter By Price -->
-            <div class="sidebar-widget price_range range mb-30">
+            <div class="sidebar-widget price_range range mb-30" style="display: none;">
                 <h5 class="section-title style-1 mb-30">Fill by price</h5>
                 <div class="price-filter">
                     <div class="price-filter-inner">
@@ -246,7 +248,7 @@
                     Fillter</a>
             </div>
             <!-- Product sidebar Widget -->
-            <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
+            <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10" style="display: none;">
                 <h5 class="section-title style-1 mb-30">New products</h5>
                 @foreach ($new_products as $new_product)
 
@@ -277,12 +279,12 @@
             <div class="banner-img wow fadeIn mb-lg-0 animated d-lg-block d-none">
                 <img src="{{ asset('frontend') }}/assets/imgs/banner/banner-11.png" alt="" />
                 <div class="banner-text">
-                    <span>Oganic</span>
+                    <span>Bio</span>
                     <h4>
-                        Save 17% <br />
-                        on <span class="text-brand">Oganic</span><br />
-                        Juice
+                        Économisez 17 % <br />
+                        sur le <span class="text-brand">jus bio</span><br />
                     </h4>
+                    
                 </div>
             </div>
         </div>

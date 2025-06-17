@@ -46,7 +46,8 @@
                                 </ul>
                             </li>
 
-                            <li>Need help? Call Us: <strong class="text-brand"> +216 53 036 074</strong></li>
+                            <li>Besoin d’aide ? Appelez-nous :
+                                <strong class="text-brand"> +216 53 036 074</strong></li>
 
                         </ul>
                     </div>
@@ -64,7 +65,8 @@
                     <div class="search-style-2">
                         <form action="#">
                             <select class="select-active">
-                                <option>All Categories</option>
+                                <option>Toutes les catégories
+                                </option>
                                 <option>Milks and Dairies</option>
                                 <option>Wines & Alcohol</option>
                                 <option>Clothing & Beauty</option>
@@ -76,7 +78,7 @@
                                 <option>Noodles & Rice</option>
                                 <option>Ice cream</option>
                             </select>
-                            <input type="text" placeholder="Search for items..." />
+                            <input type="text" placeholder="Rechercher des articles..." />
                         </form>
                     </div>
                     <div class="header-action-right">
@@ -112,8 +114,8 @@
                                         src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-user.svg" />
                                 </a>
                                 @guest
-                                <a href="{{route('login')}}"><span class="lable ml-0 mr-1">login</span></a>
-                                <a href="{{route('register')}}"><span class="lable ml-1">register</span></a>
+                                <a href="{{route('login')}}"><span class="lable ml-0 mr-1">Connexion</span></a>
+                                <a href="{{route('register')}}"><span class="lable ml-1">Register</span></a>
 
                                 @else
                                 <a href="javascript:;"><span class="lable ml-0">Account</span></a>
@@ -122,7 +124,7 @@
                                         <li>
 
                                             @guest
-                                            <a href="{{ route('login') }}"><i class="fi fi-rs-user mr-10"></i>Login</a>
+                                            <a href="{{ route('login') }}"><i class="fi fi-rs-user mr-10"></i>Connexion</a>
                                             @else
                                             <a href="{{ route('user.dashboard') }}"><i
                                                     class="fi fi-rs-user mr-10"></i>My
@@ -181,7 +183,7 @@
                 <div class="header-nav d-none d-lg-flex">
                     <div class="main-categori-wrap d-none d-lg-block">
                         <a class="categories-button-active" href="#">
-                            <span class="fi-rs-apps"></span> All Categories
+                            <span class="fi-rs-apps"></span> Toutes les catégories
                             <i class="fi-rs-angle-down"></i>
                         </a>
                         <div class="categories-dropdown-wrap categories-dropdown-active-large font-heading">
@@ -249,15 +251,15 @@
                             <ul>
 
                                 <li>
-                                    <a class="active" href="/">Home </a>
+                                    <a class="active" href="/">Accueil </a>
 
                                 </li>
                                 <li>
-                                    <a href="{{route('about')}}">About us</a>
+                                    <a href="{{route('about')}}">À propos de nous</a>
                                 </li>
                               
                                 <li class="position-static">
-                                    <a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
+                                    <a href="#">Menu principal <i class="fi-rs-angle-down"></i></a>
                                     <ul class="mega-menu">
                                         @foreach ($mega_menus as $mega_menu)
 
@@ -303,12 +305,12 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="blog-category-grid.html">Blog </a>
+                                    <a href="{{'blog'}}">Blog </a>
                                   
                                 </li>
                               
                                 <li>
-                                    <a href="page-contact.html">Contact</a>
+                                    <a href="{{'contact'}}">Contactez-nous</a>
                                 </li>
                             </ul>
                         </nav>
@@ -404,7 +406,7 @@
         <div class="mobile-header-content-area">
             <div class="mobile-search search-style-3 mobile-header-border">
                 <form action="#">
-                    <input type="text" placeholder="Search for items…" />
+                    <input type="text" placeholder="Rechercher des articles..." />
                     <button type="submit"><i class="fi-rs-search"></i></button>
                 </form>
             </div>
@@ -413,7 +415,7 @@
                 <nav>
                     <ul class="mobile-menu font-heading">
                         <li class="menu-item-has-children">
-                            <a href="/">Home</a>
+                            <a href="/">Accueil</a>
 
                         </li>
                         <li class="menu-item-has-children">
@@ -453,7 +455,7 @@
                         </li>
 
                         <li class="menu-item-has-children">
-                            <a href="#">Mega menu</a>
+                            <a href="#">Menu principal</a>
                             <ul class="dropdown">
                                 <li class="menu-item-has-children">
                                     <a href="#">Women's Fashion</a>
@@ -485,20 +487,20 @@
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="blog-category-fullwidth.html">Blog</a>
+                            <a href="{{'blog'}}">Blog</a>
                           
                         </li>
                         <li class="menu-item-has-children">
                             <a href="#">Pages</a>
                             <ul class="dropdown">
-                                <li><a href="{{route ('about')}}">About Us</a></li>
-                                <li><a href="page-contact.html">Contact</a></li>
+                                <li><a href="{{route ('about')}}">À propos de nous</a></li>
+                                <li><a href="{{'contact'}}">Contactez-nous</a></li>
                                 @guest
-                                <li><a href="{{ route('login') }}">Login</a></li>
+                                <li><a href="{{ route('login') }}">Connexion</a></li>
                                 @else
                                 <li><a href="{{ route('user.dashboard') }}">My Account</a></li>
                                 @endguest
-                                <li><a href="page-login.html">Login</a></li>
+                                <li><a href="page-login.html">Connexion</a></li>
                                 <li><a href="page-register.html">Register</a></li>
                                 <li><a href="page-forgot-password.html">Forgot password</a></li>
                                 <li><a href="page-reset-password.html">Reset password</a></li>
@@ -522,7 +524,9 @@
             </div>
             <div class="mobile-header-info-wrap">
                 <div class="single-mobile-header-info">
-                    <a href="page-contact.html"><i class="fi-rs-marker"></i> Our location </a>
+                    <a href="{{'contact'}}"><i class="fi-rs-marker"></i> Notre position
+
+                    </a>
                 </div>
                 <div class="single-mobile-header-info">
                     <a href="page-login.html"><i class="fi-rs-user"></i>Se connecter / S'inscrire </a>

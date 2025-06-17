@@ -44,20 +44,16 @@
                         <div class="detail-info pr-30 pl-30">
                             <span class="stock-status out-stock">
                                 @if($product->hot_deals)
-                                Hot Deals
+                                    Offres spéciales
                                 @elseif($product->featured)
-                                Featured Product
-
-                                @elseif($product-> special_offer)
-                                Special Offer
-
+                                    Produit en vedette
+                                @elseif($product->special_offer)
+                                    Offre spéciale
                                 @elseif($product->special_deal)
-                                Special Deal
+                                    Bon plan
                                 @endif
-
-
-
                             </span>
+                            
 
                             <h2 class="title-detail">{{ $product->product_name }}</h2>
                             <div class="product-detail-rating">
@@ -71,15 +67,15 @@
                             <div class="clearfix product-price-cover">
                                 <div class="product-price primary-color float-left">
                                     @if ($product->discount)
-                                    <span class="current-price text-brand">${{ $product->selling_price -
-                                        ($product->selling_price *($product->discount/100)) }}</span>
+                                    <span class="current-price text-brand">{{ $product->selling_price -
+                                        ($product->selling_price *($product->discount/100)) }} Dt</span>
                                     <span>
                                         <span class="save-price font-md color3 ml-15">{{ $product->discount }}%
-                                            Off</span>
-                                        <span class="old-price font-md ml-15">${{ $product->selling_price }}</span>
+                                            de réduction</span>
+                                        <span class="old-price font-md ml-15">{{ $product->selling_price }}Dt</span>
                                     </span>
                                     @else
-                                    <span class="current-price text-brand">${{ $product->selling_price }}</span>
+                                    <span class="current-price text-brand">{{ $product->selling_price }}Dt</span>
                                     @endif
 
                                 </div>
@@ -126,7 +122,8 @@
                                 <div class="product-extra-link2">
                                     <input type="hidden" id="product_details" value="{{ $product->id }}">
                                     <button onclick="cartSubmit('details')" class="button button-add-to-cart"><i
-                                            class="fi-rs-shopping-cart"></i>Add to cart</button>
+                                            class="fi-rs-shopping-cart"></i>Ajouter au panier
+                                        </button>
                                     <a aria-label="Add To Wishlist" class="action-btn hover-up"
                                         href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
                                     <a aria-label="Compare" class="action-btn hover-up" href="shop-compare.html"><i
@@ -176,7 +173,7 @@
                                     href="#Vendor-info">Vendor</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="Reviews-tab" data-bs-toggle="tab" href="#Reviews">Reviews
+                                <a class="nav-link" id="Reviews-tab" data-bs-toggle="tab" href="#Reviews">Avis clients
                                     (3)</a>
                             </li>
                         </ul>
@@ -314,12 +311,13 @@
                                         <h4 class="mb-0">89%</h4>
                                     </div>
                                 </div>
-                                <p>Noodles & Company is an American fast-casual restaurant that offers international and
-                                    American noodle dishes and pasta in addition to soups and salads. Noodles & Company
-                                    was founded in 1995 by Aaron Kennedy and is headquartered in Broomfield, Colorado.
-                                    The company went public in 2013 and recorded a $457 million revenue in 2017.In late
-                                    2018, there were 460 Noodles & Company locations across 29 states and Washington,
-                                    D.C.</p>
+                                <p>El Mandra est une plateforme tunisienne spécialisée dans la vente en ligne de produits
+                                    traditionnels et artisanaux, tels que la harissa, l’huile d’olive, les épices et les conserves.
+                                    Fondée en 2025, El Mandra valorise le patrimoine culinaire local et soutient les producteurs
+                                    des régions rurales. Grâce à une logistique moderne et des partenaires fiables, El Mandra
+                                    livre partout en Tunisie et ambitionne de s’exporter. Avec plus de 450 références en ligne,
+                                    la plateforme connaît une croissance rapide et attire une clientèle fidèle dans tout le pays.</p>
+                                    
                             </div>
                             <div class="tab-pane fade" id="Reviews">
                                 <!--Comments-->
@@ -496,7 +494,7 @@
                 </div>
                 <div class="row mt-60">
                     <div class="col-12">
-                        <h2 class="section-title style-1 mb-30">Related products</h2>
+                        <h2 class="section-title style-1 mb-30">Produits similaires</h2>
                     </div>
                     <div class="col-12">
                         <div class="row related-products">
@@ -568,11 +566,11 @@
 
                                             @if($related_product->discount)
                                             <div class="product-price">
-                                                <span>${{ $related_product->selling_price -
+                                                <span>{{ $related_product->selling_price -
                                                     ($related_product->selling_price *
-                                                    ($related_product->discount / 100)) }}</span>
-                                                <span class="old-price">${{ $related_product->selling_price
-                                                    }}</span>
+                                                    ($related_product->discount / 100)) }}Dt</span>
+                                                <span class="old-price">{{ $related_product->selling_price
+                                                    }}Dt</span>
                                             </div>
                                             @else
                                             <div class="product-price">
@@ -581,7 +579,7 @@
                                             @endif
                                             <div class="add-cart">
                                                 <a class="add" href="shop-cart.html"><i
-                                                        class="fi-rs-shopping-cart mr-5"></i>Add
+                                                        class="fi-rs-shopping-cart mr-5"></i>Ajouter
                                                 </a>
                                             </div>
                                         </div>

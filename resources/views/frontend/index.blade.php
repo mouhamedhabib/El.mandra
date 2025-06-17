@@ -16,7 +16,7 @@
                         <p class="mb-65">{{$slider->sub_title}}</p>
                         <form class="form-subcriber d-flex">
                             <input type="email" placeholder="Your emaill address" />
-                            <button class="btn" type="submit">Subscribe</button>
+                            <button class="btn" type="submit">S'abonner</button>
                         </form>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
     <div class="container wow animate__animated animate__fadeIn">
         <div class="section-title">
             <div class="title">
-                <h3>Featured Categories</h3>
+                <h3>Catégories en vedette </h3>
             </div>
             <div class="slider-arrow slider-arrow-2 flex-right carausel-10-columns-arrow"
                 id="carausel-10-columns-arrows"></div>
@@ -89,11 +89,11 @@
 <section class="product-tabs section-padding position-relative">
     <div class="container">
         <div class="section-title style-2 wow animate__animated animate__fadeIn">
-            <h3> New Products </h3>
+            <h3> Nouveaux produits </h3>
             <ul class="nav nav-tabs links" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="nav-tab-one" data-bs-toggle="tab" data-bs-target="#tab-one-all-products"
-                        type="button" role="tab" aria-controls="tab-one-all-products" aria-selected="true">All</button>
+                        type="button" role="tab" aria-controls="tab-one-all-products" aria-selected="true">Tous</button>
                 </li>
                 
                 @foreach($categories as $category)
@@ -174,19 +174,19 @@
                                 <div class="product-card-bottom">
                                     @if($product->discount)
                                     <div class="product-price">
-                                        <span>{{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }} dt</span>
-                                        <span class="old-price">{{ number_format($product->selling_price, 2) }} dt</span>
+                                        <span>{{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }} Dt</span>
+                                        <span class="old-price">{{ number_format($product->selling_price, 2) }} Dt</span>
                                     </div>
                                     @else
                                     <div class="product-price">
-                                        <span>{{ number_format($product->selling_price, 2) }} dt</span>
+                                        <span>{{ number_format($product->selling_price, 2) }} Dt</span>
                                     </div>
                                     @endif
                                     <div class="add-cart">
                                         {{-- Passing product ID directly to cartSubmit is preferred. The hidden input might be redundant. --}}
                                         <input type="hidden" id="product_new_product_{{$product->id}}" value="{{ $product->id }}">
                                         <a class="add" href="#" onclick="cartSubmit({{ $product->id }})"><i
-                                                class="fi-rs-shopping-cart mr-5"></i>Add
+                                                class="fi-rs-shopping-cart mr-5"></i>Ajouter
                                         </a>
                                     </div>
                                 </div>
@@ -264,16 +264,16 @@
                                 <div class="product-card-bottom">
                                     @if($product->discount)
                                     <div class="product-price">
-                                        <span>{{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }} dt</span>
-                                        <span class="old-price">{{ number_format($product->selling_price, 2) }} dt</span>
+                                        <span>{{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }} Dt</span>
+                                        <span class="old-price">{{ number_format($product->selling_price, 2) }} Dt</span>
                                     </div>
                                     @else
                                     <div class="product-price">
-                                        <span>{{ number_format($product->selling_price, 2) }} dt</span>
+                                        <span>{{ number_format($product->selling_price, 2) }} Dt</span>
                                     </div>
                                     @endif
                                     <div class="add-cart">
-                                        <a class="add" href="#" onclick="cartSubmit({{ $product->id }})"><i class="fi-rs-shopping-cart mr-5"></i>Add</a>
+                                        <a class="add" href="#" onclick="cartSubmit({{ $product->id }})"><i class="fi-rs-shopping-cart mr-5"></i>Ajouter</a>
                                     </div>
                                 </div>
                             </div>
@@ -377,16 +377,16 @@
                                         <div class="product-card-bottom">
                                             @if($featured_product->discount)
                                             <div class="product-price">
-                                                <span>{{ number_format($featured_product->selling_price - ($featured_product->selling_price * ($featured_product->discount / 100)), 2) }} dt</span>
-                                                <span class="old-price">{{ number_format($featured_product->selling_price, 2) }} dt</span>
+                                                <span>{{ number_format($featured_product->selling_price - ($featured_product->selling_price * ($featured_product->discount / 100)), 2) }} Dt</span>
+                                                <span class="old-price">{{ number_format($featured_product->selling_price, 2) }} Dt</span>
                                             </div>
                                             @else
                                             <div class="product-price">
-                                                <span>{{ number_format($featured_product->selling_price, 2) }} dt</span>
+                                                <span>{{ number_format($featured_product->selling_price, 2) }} Dt</span>
                                             </div>
                                             @endif
                                             <div class="add-cart">
-                                                <a class="add" href="#" onclick="cartSubmit({{ $featured_product->id }})"><i class="fi-rs-shopping-cart mr-5"></i>Add</a>
+                                                <a class="add" href="#" onclick="cartSubmit({{ $featured_product->id }})"><i class="fi-rs-shopping-cart mr-5"></i>Ajouter</a>
                                             </div>
                                         </div>
                                     </div>
@@ -476,16 +476,16 @@
                                 <div class="product-card-bottom">
                                     @if($product->discount)
                                     <div class="product-price">
-                                        <span>{{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }} dt</span>
-                                        <span class="old-price">{{ number_format($product->selling_price, 2) }} dt</span>
+                                        <span>{{ number_format($product->selling_price - ($product->selling_price * ($product->discount / 100)), 2) }} Dt</span>
+                                        <span class="old-price">{{ number_format($product->selling_price, 2) }} Dt</span>
                                     </div>
                                     @else
                                     <div class="product-price">
-                                        <span>{{ number_format($product->selling_price, 2) }} dt</span>
+                                        <span>{{ number_format($product->selling_price, 2) }} Dt</span>
                                     </div>
                                     @endif
                                     <div class="add-cart">
-                                        <a class="add" href="#" onclick="cartSubmit({{ $product->id }})"><i class="fi-rs-shopping-cart mr-5"></i>Add</a>
+                                        <a class="add" href="#" onclick="cartSubmit({{ $product->id }})"><i class="fi-rs-shopping-cart mr-5"></i>Ajouter</a>
                                     </div>
                                 </div>
                             </div>
@@ -661,9 +661,10 @@
 <!--Vendor List -->
 <div class="container">
     <div class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0">
-        <h3 class="">All Our Vendor List </h3>
+        <h3 class="">Toute notre liste de fournisseurs
+        </h3>
         <a class="show-all" href="{{ route('vendor_list') }}">
-            All Vendors
+            Tous les fournisseurs
             <i class="fi-rs-angle-right"></i>
         </a>
     </div>

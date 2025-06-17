@@ -7,9 +7,10 @@
             <div class="col-lg-5 col-md-8">
                 <div class="login_wrap background-white p-4 shadow-sm rounded">
                     <div class="heading_s1 text-center mb-4">
-                        <h2 class="mb-2">Create an Account</h2>
-                        <p class="font-sm">Already have an account? <a href="{{ route('login') }}">Login</a></p>
+                        <h2 class="mb-2">Créer un compte</h2>
+                        <p class="font-sm">Vous avez déjà un compte ? <a href="{{ route('login') }}">Connexion</a></p>
                     </div>
+                    
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
