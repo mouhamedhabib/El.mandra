@@ -11,19 +11,19 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Data Table</li>
+                    <li class="breadcrumb-item active" aria-current="page">Table de données</li>
                 </ol>
             </nav>
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <a href="{{ route('vendor.add_product') }}" class="btn btn-primary">Add Product</a>
+                <a href="{{ route('vendor.add_product') }}" class="btn btn-primary">Ajouter une marque</a>
 
             </div>
         </div>
     </div>
     <!--end breadcrumb-->
-    <h6 class="mb-0 text-uppercase">DataTable Example</h6>
+    <h6 class="mb-0 text-uppercase">Exemple de table de données</h6>
     <hr />
     <div class="card">
         <div class="card-body">
@@ -31,12 +31,13 @@
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Product Id</th>
-                            <th>Product</th>
-                            <th>Brand</th>
-                            <th>Price</th>
-                            <th>Status</th>
+                            <th>ID du produit</th>
+                            <th>Produit</th>
+                            <th>Marque</th>
+                            <th>Prix</th>
+                            <th>Statut</th>
                             <th>Action</th>
+                            
 
                         </tr>
                     </thead>
@@ -71,12 +72,13 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>Order Id</th>
-                            <th>Product</th>
-                            <th>Brand</th>
-                            <th>Price</th>
-                            <th>Status</th>
+                            <th>ID de commande</th>
+                            <th>Produit</th>
+                            <th>Marque</th>
+                            <th>Prix</th>
+                            <th>Statut</th>
                             <th>Action</th>
+
 
                         </tr>
                     </tfoot>
@@ -92,8 +94,8 @@
 <script>
     function sure(id){
                 swal({
-                title: "Are you sure?",
-                text: "Once deleted, you will not be able to recover this imaginary file!",
+                title: "Êtes-vous sûr ?",
+                text: "Une fois supprimé, vous ne pourrez pas récupérer ce fichier imaginaire !",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,

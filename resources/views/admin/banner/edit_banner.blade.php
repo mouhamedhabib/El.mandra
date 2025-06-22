@@ -4,14 +4,14 @@
 <div class="page-content">
     <!--breadcrumb-->
     <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-        <div class="breadcrumb-title pe-3">Edit Banner</div>
+        <div class="breadcrumb-title pe-3">Modifier la bannière</div>
         <div class="ps-3">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}"><i
                                 class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Edit Banner</li>
+                    <li class="breadcrumb-item active" aria-current="page">Modifier la bannière</li>
                 </ol>
             </nav>
         </div>
@@ -32,7 +32,7 @@
 
                                 <div class="row mb-3">
                                     <div class="col-sm-3">
-                                        <h6 class="mb-0">Banner Title</h6>
+                                        <h6 class="mb-0">Titre de la bannière</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
                                         <input type="text" class="form-control"
@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-sm-3">
-                                        <h6 class="mb-0">Banner Action Url</h6>
+                                        <h6 class="mb-0">URL de l'action de la bannière</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
                                         <input type="text" class="form-control" value="{{ old('url') ?? $banner->url}}"
@@ -79,7 +79,7 @@
                                 <div class="row">
                                     <div class="col-sm-3"></div>
                                     <div class="col-sm-9 text-secondary">
-                                        <input type="submit" class="btn btn-primary px-4" value="Save Changes" />
+                                        <input type="submit" class="btn btn-primary px-4" value="Enregistrer les modifications" />
                                     </div>
                                 </div>
                             </div>

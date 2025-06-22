@@ -26,9 +26,9 @@
                 <div class="menu-title">Product</div>
             </a>
             <ul>
-                <li> <a href="{{ route('vendor.all_product') }}"><i class="bx bx-right-arrow-alt"></i>All Product</a>
+                <li> <a href="{{ route('vendor.all_product') }}"><i class="bx bx-right-arrow-alt"></i>Tous les produits</a>
                 </li>
-                <li> <a href="{{ route('vendor.add_product') }}"><i class="bx bx-right-arrow-alt"></i>Add Product</a>
+                <li> <a href="{{ route('vendor.add_product') }}"><i class="bx bx-right-arrow-alt"></i>Ajouter un produit</a>
                 </li>
 
             </ul>
@@ -174,7 +174,7 @@
             <ul>
                 <li> <a href="table-basic-table.html"><i class="bx bx-right-arrow-alt"></i>Basic Table</a>
                 </li>
-                <li> <a href="table-datatable.html"><i class="bx bx-right-arrow-alt"></i>Data Table</a>
+                <li> <a href="table-datatable.html"><i class="bx bx-right-arrow-alt"></i>Table de données</a>
                 </li>
             </ul>
         </li>

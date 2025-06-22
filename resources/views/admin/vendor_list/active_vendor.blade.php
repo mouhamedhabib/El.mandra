@@ -11,14 +11,14 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Data Table</li>
+                    <li class="breadcrumb-item active" aria-current="page">Table de données</li>
                 </ol>
             </nav>
         </div>
 
     </div>
     <!--end breadcrumb-->
-    <h6 class="mb-0 text-uppercase">DataTable Example</h6>
+    <h6 class="mb-0 text-uppercase">Exemple de table de données</h6>
     <hr />
     <div class="card">
         <div class="card-body">
@@ -26,7 +26,7 @@
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Serial</th>
+                            <th>Série</th>
                             <th>Name</th>
                             <th>User Name</th>
                             <th>Status</th>
@@ -52,7 +52,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>Serial</th>
+                            <th>Série</th>
                             <th>Name</th>
                             <th>User Name</th>
                             <th>Status</th>
@@ -72,8 +72,8 @@
 <script>
     function sure(id){
                 swal({
-                title: "Are you sure?",
-                text: "Once deleted, you will not be able to recover this imaginary file!",
+                title: "Êtes-vous sûr ?",
+                text: "Une fois supprimé, vous ne pourrez pas récupérer ce fichier imaginaire !",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,

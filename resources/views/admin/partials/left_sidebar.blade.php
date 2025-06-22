@@ -1,11 +1,12 @@
-<div class="sidebar-wrapper" data-simplebar="true">
+
+<div class="sidebar-wrapper" data-simplebar="true" >
     <div class="sidebar-header">
         <div>
-            <img src="{{asset('admin')}}/assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+            <img src="{{asset('admin')}}/assets/images/logo-icon.png" width="1000px" class="logo-icon" alt="logo icon">
         </div>
-        <div>
+         <div >
             <h4 class="logo-text">Admin</h4>
-        </div>
+        </div> 
         <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
         </div>
     </div>
@@ -15,7 +16,7 @@
             <a href="{{ route('admin.dashboard') }}">
                 <div class="parent-icon"><i class='bx bx-home-circle'></i>
                 </div>
-                <div class="menu-title">Dashboard</div>
+                <div class="menu-title">Tableau de bord</div>
             </a>
 
         </li>
@@ -23,12 +24,12 @@
             <a href="javascript:;" class="has-arrow">
                 <div class="parent-icon"><i class="bx bx-category"></i>
                 </div>
-                <div class="menu-title">Brand</div>
+                <div class="menu-title">Marque</div>
             </a>
             <ul>
-                <li> <a href="{{ route('admin.all_brand') }}"><i class="bx bx-right-arrow-alt"></i>All Brand</a>
+                <li> <a href="{{ route('admin.all_brand') }}"><i class="bx bx-right-arrow-alt"></i>Toutes les marques</a>
                 </li>
-                <li> <a href="{{ route('admin.add_brand') }}"><i class="bx bx-right-arrow-alt"></i>Add Brand</a>
+                <li> <a href="{{ route('admin.add_brand') }}"><i class="bx bx-right-arrow-alt"></i>Ajouter une marque</a>
 
             </ul>
         </li>
@@ -36,12 +37,12 @@
             <a href="javascript:;" class="has-arrow">
                 <div class="parent-icon"><i class="bx bx-category"></i>
                 </div>
-                <div class="menu-title">Category</div>
+                <div class="menu-title">Catégorie</div>
             </a>
             <ul>
-                <li> <a href="{{ route('admin.all_category') }}"><i class="bx bx-right-arrow-alt"></i>All Category</a>
+                <li> <a href="{{ route('admin.all_category') }}"><i class="bx bx-right-arrow-alt"></i>Toutes les catégories</a>
                 </li>
-                <li> <a href="{{ route('admin.add_category') }}"><i class="bx bx-right-arrow-alt"></i>Add Category</a>
+                <li> <a href="{{ route('admin.add_category') }}"><i class="bx bx-right-arrow-alt"></i>Toutes les catégories</a>
 
             </ul>
         </li>
@@ -49,14 +50,12 @@
             <a href="javascript:;" class="has-arrow">
                 <div class="parent-icon"><i class="bx bx-category"></i>
                 </div>
-                <div class="menu-title">Sub Category</div>
+                <div class="menu-title">Sous-catégorie</div>
             </a>
             <ul>
-                <li> <a href="{{ route('admin.all_sub_category') }}"><i class="bx bx-right-arrow-alt"></i>All Sub
-                        Category</a>
+                <li> <a href="{{ route('admin.all_sub_category') }}"><i class="bx bx-right-arrow-alt"></i>Toutes les catégories</a>
                 </li>
-                <li> <a href="{{ route('admin.add_sub_category') }}"><i class="bx bx-right-arrow-alt"></i>Add Sub
-                        Category</a>
+                <li> <a href="{{ route('admin.add_sub_category') }}"><i class="bx bx-right-arrow-alt"></i>Ajouter une sous-catégorie</a>
 
             </ul>
         </li>
@@ -64,12 +63,12 @@
             <a href="javascript:;" class="has-arrow">
                 <div class="parent-icon"><i class="bx bx-category"></i>
                 </div>
-                <div class="menu-title">Slider</div>
+                <div class="menu-title">Curseur</div>
             </a>
             <ul>
-                <li> <a href="{{ route('admin.all_slider') }}"><i class="bx bx-right-arrow-alt"></i>All Slider</a>
+                <li> <a href="{{ route('admin.all_slider') }}"><i class="bx bx-right-arrow-alt"></i>Tous les curseurs</a>
                 </li>
-                <li> <a href="{{ route('admin.add_slider') }}"><i class="bx bx-right-arrow-alt"></i>Add Slider</a>
+                <li> <a href="{{ route('admin.add_slider') }}"><i class="bx bx-right-arrow-alt"></i>Ajouter un curseur</a>
 
             </ul>
         </li>
@@ -77,12 +76,14 @@
             <a href="javascript:;" class="has-arrow">
                 <div class="parent-icon"><i class="bx bx-category"></i>
                 </div>
-                <div class="menu-title">Banner</div>
+                <div class="menu-title">bannière</div>
             </a>
             <ul>
-                <li> <a href="{{ route('admin.all_banner') }}"><i class="bx bx-right-arrow-alt"></i>All Banner</a>
+                <li> <a href="{{ route('admin.all_banner') }}"><i class="bx bx-right-arrow-alt"></i>Toutes les bannières
+
+                </a>
                 </li>
-                <li> <a href="{{ route('admin.add_banner') }}"><i class="bx bx-right-arrow-alt"></i>Add Banner</a>
+                <li> <a href="{{ route('admin.add_banner') }}"><i class="bx bx-right-arrow-alt"></i>Ajouter une bannière</a>
 
             </ul>
         </li>
@@ -90,15 +91,16 @@
             <a href="javascript:;" class="has-arrow">
                 <div class="parent-icon"><i class="bx bx-category"></i>
                 </div>
-                <div class="menu-title">Product</div>
+                <div class="menu-title">Produit</div>
             </a>
             <ul>
-                <li> <a href="{{ route('admin.all_product') }}"><i class="bx bx-right-arrow-alt"></i>All Prouct</a>
+                <li> <a href="{{ route('admin.all_product') }}"><i class="bx bx-right-arrow-alt"></i>Tous les produits</a>
                 </li>
-                <li> <a href="{{ route('admin.add_product') }}"><i class="bx bx-right-arrow-alt"></i>Add Product</a>
+                <li> <a href="{{ route('admin.add_product') }}"><i class="bx bx-right-arrow-alt"></i>Ajouter un produit</a>
 
             </ul>
         </li>
+        <div style="display: none;">
         <li class="menu-label">Vendors</li>
 
         <li>
@@ -231,7 +233,7 @@
             <ul>
                 <li> <a href="table-basic-table.html"><i class="bx bx-right-arrow-alt"></i>Basic Table</a>
                 </li>
-                <li> <a href="table-datatable.html"><i class="bx bx-right-arrow-alt"></i>Data Table</a>
+                <li> <a href="table-datatable.html"><i class="bx bx-right-arrow-alt"></i>Table de données</a>
                 </li>
             </ul>
         </li>
@@ -380,5 +382,6 @@
             </a>
         </li>
     </ul>
+</div>
     <!--end navigation-->
 </div>

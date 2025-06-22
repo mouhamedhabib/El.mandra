@@ -11,15 +11,15 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Add New Product</li>
+                    <li class="breadcrumb-item active" aria-current="page">Ajouter un nouveau produit</li>
                 </ol>
             </nav>
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <button type="button" class="btn btn-primary">Settings</button>
+                <button type="button" class="btn btn-primary">Paramètres</button>
                 <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split"
-                    data-bs-toggle="dropdown"> <span class="visually-hidden">Toggle Dropdown</span>
+                    data-bs-toggle="dropdown"> <span class="visually-hidden">Basculer le menu déroulant</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"> <a class="dropdown-item"
                         href="javascript:;">Action</a>
@@ -34,7 +34,7 @@
 
     <div class="card">
         <div class="card-body p-4">
-            <h5 class="card-title">Add New Product</h5>
+            <h5 class="card-title">Ajouter un nouveau produit</h5>
             <hr />
 
             <div class="form-body mt-4">
@@ -45,7 +45,7 @@
                         <div class="col-lg-8">
                             <div class="border border-3 p-4 rounded">
                                 <div class="mb-3">
-                                    <label for="inputProductTitle" class="form-label">Product Title</label>
+                                    <label for="inputProductTitle" class="form-label">Titre du produit</label>
                                     <input type="text" class="form-control" name="product_name" id="inputProductTitle"
                                         placeholder="Enter product title" value="{{ old('product_name') }}">
                                     @error('product_name')
@@ -128,9 +128,9 @@
 
 
                                     <div class="col-12">
-                                        <label for="inputProductType" class="form-label">Brand</label>
+                                        <label for="inputProductType" class="form-label">Marque</label>
                                         <select name="brand_id" class="form-select" id="inputBrand">
-                                            <option disabled selected value="">Select Brand</option>
+                                            <option disabled selected value="">Sélectionner une marque</option>
                                             @foreach ($brands as $brand)
                                             <option value="{{ $brand->id }}">{{ $brand->name }}</option>
                                             @endforeach
@@ -143,7 +143,7 @@
                                     <div class="col-12">
                                         <label for="inputVendor" class="form-label">Category</label>
                                         <select name="category_id" class="form-select" id="category">
-                                            <option selected disabled value="">Select a Category</option>
+                                            <option selected disabled value="">Sélectionner une catégorie</option>
                                             @foreach ($categories as $category)
                                             <option value="{{ $category->id }}">{{ $category->name }}</option>
                                             @endforeach
@@ -153,15 +153,15 @@
                                         @enderror
                                     </div>
                                     <div class="col-12">
-                                        <label for="inputCollection" class="form-label">Sub Category</label>
+                                        <label for="inputCollection" class="form-label">Sous-catégorie</label>
                                         <select class="form-select" id="sub_category" name="sub_category_id">
-                                            <option selected disabled>Select Sub Category</option>
+                                            <option selected disabled>Sélectionner une sous-catégorie</option>
 
                                         </select>
                                     </div>
                                     <div class="col-12">
                                         <div class="d-grid">
-                                            <button type="submit" class="btn btn-primary">Save Product</button>
+                                            <button type="submit" class="btn btn-primary">Enregistrer le produit</button>
                                         </div>
                                     </div>
                                 </div>

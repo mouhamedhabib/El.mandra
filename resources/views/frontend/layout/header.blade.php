@@ -290,8 +290,8 @@
                                                     <div class="menu-banner-price">
                                                         <span class="new-price text-success">Save to 50%</span>
                                                     </div>
-                                                    <div class="menu-banner-btn">
-                                                        <a href="shop-product-right.html">Shop now</a>
+                                                    <div class="menu-banner-btn"style="display:none;">
+                                                        <a href="shop-product-right.html>Shop now</a>
                                                     </div>
                                                 </div>
                                                 <div class="menu-banner-discount">

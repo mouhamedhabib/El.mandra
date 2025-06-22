@@ -19,7 +19,7 @@
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <div class="d-flex align-items-center text-white">
-                        <p class="mb-0">Total Orders</p>
+                        <p class="mb-0">Total des commandes</p>
                         <p class="mb-0 ms-auto">+4.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
             <div class="card radius-10 bg-gradient-orange">
                 <div class="card-body">
                     <div class="d-flex align-items-center">
-                        <h5 class="mb-0 text-white">$8323</h5>
+                        <h5 class="mb-0 text-white">8323 Dt</h5>
                         <div class="ms-auto">
                             <i class='bx bx-dollar fs-3 text-white'></i>
                         </div>
@@ -39,7 +39,7 @@
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <div class="d-flex align-items-center text-white">
-                        <p class="mb-0">Total Revenue</p>
+                        <p class="mb-0">Revenu total</p>
                         <p class="mb-0 ms-auto">+1.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <div class="d-flex align-items-center text-white">
-                        <p class="mb-0">Visitors</p>
+                        <p class="mb-0">Visiteurs</p>
                         <p class="mb-0 ms-auto">+5.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
         <div class="card-body">
             <div class="d-flex align-items-center">
                 <div>
-                    <h5 class="mb-0">Orders Summary</h5>
+                    <h5 class="mb-0">Résumé des commandes</h5>
                 </div>
                 <div class="font-22 ms-auto"><i class="bx bx-dots-horizontal-rounded"></i>
                 </div>
@@ -105,14 +105,15 @@
                 <table class="table align-middle mb-0">
                     <thead class="table-light">
                         <tr>
-                            <th>Order id</th>
-                            <th>Product</th>
-                            <th>Customer</th>
+                            <th>ID de la commande</th>
+                            <th>Produit</th>
+                            <th>Client</th>
                             <th>Date</th>
-                            <th>Price</th>
-                            <th>Status</th>
+                            <th>Prix</th>
+                            <th>Statut</th>
                             <th>Action</th>
                         </tr>
+                        
                     </thead>
                     <tbody>
                         <tr>
@@ -129,9 +130,9 @@
                             </td>
                             <td>Brooklyn Zeo</td>
                             <td>12 Jul 2020</td>
-                            <td>$64.00</td>
+                            <td>64.00 Dt</td>
                             <td>
-                                <div class="badge rounded-pill bg-light-info text-info w-100">In Progress
+                                <div class="badge rounded-pill bg-light-info text-info w-100">En cours
                                 </div>
                             </td>
                             <td>
@@ -155,10 +156,10 @@
                             </td>
                             <td>Martin Hughes</td>
                             <td>14 Jul 2020</td>
-                            <td>$45.00</td>
+                            <td>45.00 Dt</td>
                             <td>
                                 <div class="badge rounded-pill bg-light-success text-success w-100">
-                                    Completed</div>
+                                    Terminé</div>
                             </td>
                             <td>
                                 <div class="d-flex order-actions"> <a href="javascript:;" class=""><i
@@ -181,9 +182,9 @@
                             </td>
                             <td>Shoan Stephen</td>
                             <td>15 Jul 2020</td>
-                            <td>$67.00</td>
+                            <td>67.00 Dt</td>
                             <td>
-                                <div class="badge rounded-pill bg-light-danger text-danger w-100">Cancelled
+                                <div class="badge rounded-pill bg-light-danger text-danger w-100">Annulé
                                 </div>
                             </td>
                             <td>
@@ -207,10 +208,10 @@
                             </td>
                             <td>Alister Campel</td>
                             <td>18 Jul 2020</td>
-                            <td>$87.00</td>
+                            <td>87.00 Dt</td>
                             <td>
                                 <div class="badge rounded-pill bg-light-success text-success w-100">
-                                    Completed</div>
+                                    Terminé</div>
                             </td>
                             <td>
                                 <div class="d-flex order-actions"> <a href="javascript:;" class=""><i
@@ -233,9 +234,9 @@
                             </td>
                             <td>Keate Medona</td>
                             <td>20 Jul 2020</td>
-                            <td>$75.00</td>
+                            <td>75.00 Dt</td>
                             <td>
-                                <div class="badge rounded-pill bg-light-info text-info w-100">In Progress
+                                <div class="badge rounded-pill bg-light-info text-info w-100">En cours
                                 </div>
                             </td>
                             <td>
@@ -259,9 +260,9 @@
                             </td>
                             <td>Winslet Maya</td>
                             <td>22 Jul 2020</td>
-                            <td>$80.00</td>
+                            <td>80.00 Dt</td>
                             <td>
-                                <div class="badge rounded-pill bg-light-danger text-danger w-100">Cancelled
+                                <div class="badge rounded-pill bg-light-danger text-danger w-100">Annulé
                                 </div>
                             </td>
                             <td>
@@ -285,10 +286,10 @@
                             </td>
                             <td>Emy Jackson</td>
                             <td>28 Jul 2020</td>
-                            <td>$96.00</td>
+                            <td>96.00 Dt</td>
                             <td>
                                 <div class="badge rounded-pill bg-light-success text-success w-100">
-                                    Completed</div>
+                                    Terminé</div>
                             </td>
                             <td>
                                 <div class="d-flex order-actions"> <a href="javascript:;" class=""><i

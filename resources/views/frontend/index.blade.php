@@ -67,7 +67,7 @@
                 <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
                     <img src="{{ file_exists(public_path('uploaded/banners/'.$banner->image)) ? asset('uploaded/banners/'.$banner->image) : asset('uploaded/no_image.jpg') }}"
                         alt="{{ $banner->title }}" />
-                    <div class="banner-text">
+                    <div class="banner-text"style="display:none;">
                         <h4>
                             {{ $banner->title }}
                         </h4>
@@ -293,7 +293,7 @@
 <section class="section-padding pb-5">
     <div class="container">
         <div class="section-title wow animate__animated animate__fadeIn">
-            <h3 class=""> Featured Products </h3>
+            <h3 class=""> Produits vedettes </h3>
         </div>
         <div class="row">
             <div class="col-lg-3 d-none d-lg-flex wow animate__animated animate__fadeIn">
