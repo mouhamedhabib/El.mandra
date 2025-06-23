@@ -17,7 +17,7 @@
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <a href="{{ route('admin.add_banner') }}" class="btn btn-primary">Add Banner</a>
+                <a href="{{ route('admin.add_banner') }}" class="btn btn-primary">Ajouter une bannière</a>
 
             </div>
         </div>

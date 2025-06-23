@@ -161,7 +161,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="d-grid">
-                                            <button type="submit" class="btn btn-primary">Save Product</button>
+                                            <button type="submit" class="btn btn-primary">Sauvegarder le produit</button>
                                         </div>
                                     </div>
                                 </div>

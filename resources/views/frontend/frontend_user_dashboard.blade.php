@@ -258,7 +258,7 @@
                                                 <div class="col-md-12">
                                                     <button type="submit"
                                                         class="btn btn-fill-out submit font-weight-bold" name="submit"
-                                                        value="Submit">Save Change</button>
+                                                        value="Submit">Enregistrer les modifications</button>
                                                 </div>
                                             </div>
                                         </form>

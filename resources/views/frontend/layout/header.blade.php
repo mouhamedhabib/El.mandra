@@ -288,7 +288,7 @@
                                                         Trending
                                                     </h3>
                                                     <div class="menu-banner-price">
-                                                        <span class="new-price text-success">Save to 50%</span>
+                                                        <span class="new-price text-success">Économisez jusqu'à 50%</span>
                                                     </div>
                                                     <div class="menu-banner-btn"style="display:none;">
                                                         <a href="shop-product-right.html>Shop now</a>

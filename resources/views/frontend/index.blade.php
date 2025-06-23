@@ -138,7 +138,7 @@
                                 <div class="product-badges product-badges-position product-badges-mrg">
                                     <span class="hot">
                                         @if ($product->discount)
-                                        {{ "save ". $product->discount . " %" }}
+                                        {{ "Économisez ". $product->discount . " %" }}
                                         @elseif ($product->featured)
                                         Featured
                                         @elseif ($product->special_offer)
@@ -229,7 +229,7 @@
                                 <div class="product-badges product-badges-position product-badges-mrg">
                                     <span class="hot">
                                         @if ($product->discount)
-                                        {{ "save ". $product->discount . " %" }}
+                                        {{ "Économisez ". $product->discount . " %" }}
                                         @elseif ($product->featured)
                                         Featured
                                         @elseif ($product->special_offer)
@@ -341,7 +341,7 @@
                                         <div class="product-badges product-badges-position product-badges-mrg">
                                             <span class="hot">
                                                 @if ($featured_product->discount)
-                                                {{ "save ". $featured_product->discount . " %" }}
+                                                {{ "Économisez ". $featured_product->discount . " %" }}
                                                 @elseif ($featured_product->featured)
                                                 Featured
                                                 @elseif ($featured_product->special_offer)
@@ -441,7 +441,7 @@
                                 <div class="product-badges product-badges-position product-badges-mrg">
                                     <span class="hot">
                                         @if ($product->discount)
-                                        {{ "save ". $product->discount . " %" }}
+                                        {{ "Économisez ". $product->discount . " %" }}
                                         @elseif ($product->featured)
                                         Featured
                                         @elseif ($product->special_offer)
@@ -449,7 +449,7 @@
                                         @elseif($product->special_deal)
                                         Special Deal
                                         @else
-                                        New
+                                        Nouveau
                                         @endif
                                     </span>
                                 </div>
