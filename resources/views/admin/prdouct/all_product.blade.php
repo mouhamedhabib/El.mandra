@@ -58,8 +58,8 @@
                             <td>{{ $product->selling_price }}</td>
                             <td>{{ $product->status }}</td>
                             <td>
-                                <a href="{{ route('admin.edit_brand',$product->id) }}"
-                                    class="btn btn-sm btn-primary">Modifier</a>
+                                <a href="{{ route('admin.edit_product', $product->id) }}" class="btn btn-sm btn-primary">Modifier</a>
+
                                 <a href="javascript:;" onclick="sure({{ $product->id }})"
                                     class="btn btn-sm btn-danger">Supprimer</a>
                             </td>

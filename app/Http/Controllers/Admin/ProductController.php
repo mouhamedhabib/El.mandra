@@ -78,6 +78,49 @@ class ProductController extends Controller
         return redirect()->route('admin.all_product')->with($alert);
     }
 
+    public function edit(Product $product): View
+    {
+        $categories = Category::with('sub_categories')->orderByDesc('id')->get();
+        $brands = Brand::latest()->get();
+        return view('admin.prdouct.edit_product', compact('product', 'categories', 'brands'));
+    }
+
+    public function update(StoreProductRequest $request, Product $product)
+    {
+        $thumbnail = $product->thumbnail;
+
+        if ($request->hasFile('photo')) {
+            if (file_exists(public_path('uploaded/product/' . $thumbnail))) {
+                unlink(public_path('uploaded/product/' . $thumbnail));
+            }
+            $new_thumbnail = hexdec(uniqid()) . '.' . $request->photo->getClientOriginalExtension();
+            Image::make($request->photo)->resize(800, 800)->save(public_path('uploaded/product/' . $new_thumbnail));
+            $thumbnail = $new_thumbnail;
+        }
+
+        $product->update([
+            'category_id' => $request->category_id,
+            'brand_id' => $request->brand_id,
+            'product_name' => $request->product_name,
+            'product_slug' => Str::slug($request->product_name),
+            'product_id' => "#" . str_replace(" ", "_", $request->product_name) . '_' . date('i_s'),
+            'thumbnail' => $thumbnail,
+            'product_sizes' => serialize(explode(',', $request->product_sizes)),
+            'product_colors' => serialize(explode(',', $request->product_colors)),
+            'product_tags' => serialize(explode(',', $request->product_tags)),
+            'selling_price' => $request->selling_price,
+            'discount' => $request->discount,
+            'product_quantity' => $request->product_quantity,
+            'short_desc' => $request->short_desc,
+            'long_desc' => $request->long_desc,
+        ]);
+
+        return redirect()->route('admin.all_product')->with([
+            'message' => 'Produit mis à jour avec succès.',
+            'type' => 'success'
+        ]);
+    }
+
     public function destroy(Product $product)
     {
         if (file_exists(public_path('uploaded/product/' . $product->thumbnail))) {

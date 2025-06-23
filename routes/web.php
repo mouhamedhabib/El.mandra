@@ -87,6 +87,8 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
         Route::get('/add-product', 'create')->name('add_product');
         Route::post('/store-product', 'store')->name('store_product');
         Route::get('/delete-product/{product}', 'destroy')->name('delete_product');
+        Route::get('/edit-product/{product}', 'edit')->name('edit_product'); // <-- Change here
+        Route::post('/update-product/{product}', 'update')->name('update_product'); // <-- Change here
     });
 
     Route::controller(SliderController::class)->group(function () {

@@ -24,7 +24,7 @@ class UserFactory extends Factory
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
             'user_name' => fake()->userName(),
-            'photo' => explode("/", fake()->image(public_path('uploaded/vendor'), 60, 60))[7],
+            'photo' => basename(fake()->image(public_path('uploaded/vendor'), 60, 60)),
             'address' => fake()->address(),
             'phone' => fake()->phoneNumber(),
             'role' => 'vendor',

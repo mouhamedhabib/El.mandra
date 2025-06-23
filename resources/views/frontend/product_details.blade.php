@@ -132,13 +132,19 @@
                             </div>
                             <div class="font-xs">
                                 <ul class="mr-50 float-start">
-                                    <li class="mb-5">Type: <span class="text-brand">{{ $product->category->name
-                                            }}</span></li>
-                                    <li class="mb-5">MFG:<span class="text-brand"> {{
-                                            $product->created_at->format("d-m-Y") }}</span>
+                                    <li class="mb-5">
+                                        Type: <span class="text-brand">{{ $product->category->name }}</span>
                                     </li>
-                                    <li>LIFE: <span class="text-brand">70 days</span></li>
+                                    <li class="mb-5">
+                                        MFG: <span class="text-brand">
+                                            {{ $product->created_at ? $product->created_at->format("d-m-Y") : 'Date non disponible' }}
+                                        </span>
+                                    </li>
+                                    <li>
+                                        LIFE: <span class="text-brand">70 days</span>
+                                    </li>
                                 </ul>
+                                
                                 <ul class="float-start">
                                     <li class="mb-5">SKU: <a href="#">{{ $product->product_id }}</a></li>
                                     <li class="mb-5">Tags:
