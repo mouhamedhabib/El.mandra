@@ -66,24 +66,25 @@
 
 
                                 <div class="mb-3">
-                                    <label for="inputProductDescription" class="form-label">Product Size</label>
+                                    <label for="inputProductDescription" class="form-label">Taille du produit</label>
                                     <input name="product_sizes" type="text" class="form-control visually-hidden"
-                                        data-role="tagsinput" value="{{ old('product_sizes') ?? " sm,md,xl" }}">
+                                        data-role="tagsinput" value="{{ old('product_sizes') ?? " 1kg,1L" }}">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="inputProductDescription" class="form-label">Product Tags</label>
+                                    <label for="inputProductDescription" class="form-label">Étiquettes du produit</label>
                                     <input name="product_tags" type="text" class="form-control visually-hidden"
                                         data-role="tagsinput" value="{{ old('product_tags') ?? 'new,best,hot' }}">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="inputProductDescription" class="form-label">Product Color</label>
+                                    <label for="inputProductDescription" class="form-label">Couleur du produit</label>
                                     <input name="product_colors" type="text" class="form-control visually-hidden"
-                                        data-role="tagsinput" value="{{ old('product_sizes') ?? 'red,blue,cyan' }}">
+                                        data-role="tagsinput" value="{{ old('product_sizes') ?? 'yellow,cyan' }}">
                                 </div>
 
 
                                 <div class="mb-3">
-                                    <label for="inputProductDescription" class="form-label">Product Images</label>
+                                    <label for="inputProductDescription" class="form-label">Images du produit
+                                    </label>
                                     <input id="image" class="form-control" type="file" name="photo">
                                     @error('photo')
                                     <div class="text-danger">{{ $message }}</div>
@@ -93,7 +94,7 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="inputProductDescription" class="form-label">Product Multiple
+                                    <label for="inputProductDescription" class="form-label">Produit multiple
                                         Image</label>
                                     <input id="images" class="form-control" name="multi_images[]" type="file" multiple>
                                     <div id="showImages"></div>
@@ -104,7 +105,7 @@
                             <div class="border border-3 p-4 rounded">
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <label for="inputPrice" class="form-label">Price</label>
+                                        <label for="inputPrice" class="form-label">Prix</label>
                                         <input name="selling_price" type="text" class="form-control" id="inputPrice"
                                             placeholder="00.00" value="{{ old('selling_price')  }}">
                                         @error('selling_price')
@@ -112,12 +113,14 @@
                                         @enderror
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="inputCompareatprice" class="form-label">Discount Price</label>
+                                        <label for="inputCompareatprice" class="form-label">Prix réduit
+                                        </label>
                                         <input name="discount" type="text" class="form-control" id="inputCompareatprice"
                                             placeholder="00.00" value="{{ old('discount') }}">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="inputQuantity" class="form-label">Quantity</label>
+                                        <label for="inputQuantity" class="form-label">Quantité
+                                        </label>
                                         <input name="product_quantity" type="text" class="form-control"
                                             id="inputQuantity" placeholder="00.00"
                                             value="{{ old('product_quantity') }}">

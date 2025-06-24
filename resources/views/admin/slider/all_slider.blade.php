@@ -17,7 +17,8 @@
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <a href="{{ route('admin.add_slider') }}" class="btn btn-primary">Add Slider</a>
+                <a href="{{ route('admin.add_slider') }}" class="btn btn-primary">Ajouter un curseur
+                </a>
 
             </div>
         </div>

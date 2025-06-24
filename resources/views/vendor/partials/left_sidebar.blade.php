@@ -33,6 +33,7 @@
 
             </ul>
         </li>
+        <div style="display:none;">
         <li class="menu-label">UI Elements</li>
         <li>
             <a href="widgets.html">
@@ -323,5 +324,6 @@
             </a>
         </li>
     </ul>
+</div>
     <!--end navigation-->
 </div>

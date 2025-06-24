@@ -212,11 +212,11 @@
             <div class="col-xl-4 col-lg-6 col-md-6 text-end d-none d-md-block">
                 <div class="mobile-social-icon">
                     <h6>Suivez-nous</h6>
-                    <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-facebook-white.svg"
+                    <a href="https://www.facebook.com/profile.php?id=61575866926969"target="_blank"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-facebook-white.svg"
                             alt="" /></a>
                     {{-- <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-twitter-white.svg"
                             alt="" /></a> --}}
-                    <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-instagram-white.svg"
+                    <a href="https://www.instagram.com/el.mandra25/"target="_blank"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-instagram-white.svg"
                             alt="" /></a>
                     {{-- <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-pinterest-white.svg"
                             alt="" /></a> --}}

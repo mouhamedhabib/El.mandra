@@ -4,14 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <title>El.Mandra</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+<meta name="description" content="Découvrez les meilleurs produits artisanaux tunisiens : huile d'olive vierge, harissa, épices, piments, gingembre moulu, et bien plus. El Mandra vous offre le goût authentique du terroir tunisien." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- META SOCIAL MEDIA Open Graph (pour Facebook et autres) -->
+<meta property="og:title" content="El Mandra - Produits artisanaux de Tunisie" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.elmandra.tn/" />
+<meta property="og:image" content="https://www.elmandra.tn/images/og-image.jpg" />
+
+<!-- CSRF TOKEN Laravel -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('frontend')}}/assets/imgs/theme/favicon.svg" />
     <!-- Template CSS -->

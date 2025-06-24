@@ -243,7 +243,7 @@
                 </ul>
             </div>
             <!-- Fillter By Price -->
-            <div class="sidebar-widget price_range range mb-30">
+            <div class="sidebar-widget price_range range mb-30" style="display: none">
                 <h5 class="section-title style-1 mb-30">Fill by price</h5>
                 <div class="price-filter">
                     <div class="price-filter-inner">
@@ -296,10 +296,11 @@
                 <div class="banner-text">
                     <span>Oganic</span>
                     <h4>
-                        Save 17% <br />
-                        on <span class="text-brand">Oganic</span><br />
-                        Juice
+                        Économisez 17% <br />
+                        sur le <span class="text-brand">Produit naturel</span><br />
+                        de saison
                     </h4>
+                    
                 </div>
             </div>
         </div>
