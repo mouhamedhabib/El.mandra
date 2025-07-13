@@ -4,14 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <title>El.Mandra</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+<meta name="description" content="Découvrez les meilleurs produits artisanaux tunisiens : huile d'olive vierge, harissa, épices, piments, gingembre moulu, et bien plus. El Mandra vous offre le goût authentique du terroir tunisien." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- META SOCIAL MEDIA Open Graph (pour Facebook et autres) -->
+<meta property="og:title" content="El Mandra - Produits artisanaux de Tunisie" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.elmandra.tn/" />
+<meta property="og:image" content="https://www.elmandra.tn/images/og-image.jpg" />
+
+<!-- CSRF TOKEN Laravel -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('frontend')}}/assets/imgs/theme/favicon.svg" />
     <!-- Template CSS -->
@@ -31,60 +38,22 @@
                 <button type="button" id="btnClose" class="btn-close" data-bs-dismiss="modal"
                     aria-label="Close"></button>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 col-xs-12 mb-md-0 mb-sm-5">
-                            <div class="detail-gallery">
-                                <span class="zoom-icon"><i class="fi-rs-search"></i></span>
-                                <!-- MAIN SLIDES -->
-                                <div class="product-image-slider">
-                                    <figure class="border-radius-10">
-                                        <img id="quickViewImage"
-                                            src="{{asset('frontend')}}/assets/imgs/shop/product-16-2.jpg"
-                                            alt="product image" />
-                                    </figure>
-                                    <figure class="border-radius-10">
-                                        <img src="{{asset('frontend')}}/assets/imgs/shop/product-16-1.jpg"
-                                            alt="product image" />
-                                    </figure>
-                                    <figure class="border-radius-10">
-                                        <img src="{{asset('frontend')}}/assets/imgs/shop/product-16-3.jpg"
-                                            alt="product image" />
-                                    </figure>
-                                    <figure class="border-radius-10">
-                                        <img src="{{asset('frontend')}}/assets/imgs/shop/product-16-4.jpg"
-                                            alt="product image" />
-                                    </figure>
-                                    <figure class="border-radius-10">
-                                        <img src="{{asset('frontend')}}/assets/imgs/shop/product-16-5.jpg"
-                                            alt="product image" />
-                                    </figure>
-                                    <figure class="border-radius-10">
-                                        <img src="{{asset('frontend')}}/assets/imgs/shop/product-16-6.jpg"
-                                            alt="product image" />
-                                    </figure>
-                                    <figure class="border-radius-10">
-                                        <img src="{{asset('frontend')}}/assets/imgs/shop/product-16-7.jpg"
-                                            alt="product image" />
-                                    </figure>
-                                </div>
-                                <!-- THUMBNAILS -->
-                                <div class="slider-nav-thumbnails">
-                                    <div><img src="{{asset('frontend')}}/assets/imgs/shop/thumbnail-3.jpg"
-                                            alt="product image" /></div>
-                                    <div><img src="{{asset('frontend')}}/assets/imgs/shop/thumbnail-4.jpg"
-                                            alt="product image" /></div>
-                                    <div><img src="{{asset('frontend')}}/assets/imgs/shop/thumbnail-5.jpg"
-                                            alt="product image" /></div>
-                                    <div><img src="{{asset('frontend')}}/assets/imgs/shop/thumbnail-6.jpg"
-                                            alt="product image" /></div>
-                                    <div><img src="{{asset('frontend')}}/assets/imgs/shop/thumbnail-7.jpg"
-                                            alt="product image" /></div>
-                                    <div><img src="{{asset('frontend')}}/assets/imgs/shop/thumbnail-8.jpg"
-                                            alt="product image" /></div>
-                                    <div><img src="{{asset('frontend')}}/assets/imgs/shop/thumbnail-9.jpg"
-                                            alt="product image" /></div>
-                                </div>
+                    <div class="product-image-slider">
+                        @foreach ($product->multiple_images as $multi_image)
+                            <figure class="border-radius-10">
+                                <img src="{{ asset('uploaded/product/' . $multi_image->image) }}" alt="product image" />
+                            </figure>
+                        @endforeach
+                    </div>
+                    
+                    <div class="slider-nav-thumbnails">
+                        @foreach ($product->multiple_images as $multi_image)
+                            <div>
+                                <img src="{{ asset('uploaded/product/' . $multi_image->image) }}" alt="product image" />
                             </div>
+                        @endforeach
+                    </div>
+                    
                             <!-- End Gallery -->
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">

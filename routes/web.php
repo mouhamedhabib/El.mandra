@@ -11,6 +11,8 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\SubCategoryController;
 use App\Http\Controllers\Auth\VendorRegisterController;
+use App\Http\Controllers\BlogControoler;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Frontend\CartController;
 use App\Http\Controllers\Frontend\FrontendProductController;
 use App\Http\Controllers\Frontend\HomeController;
@@ -26,6 +28,14 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/test', function () {
+    abort(503);
+});
+
+Route::get('/debug-sentry', function () {
+    throw new Exception('My first Sentry error!');
+});
+
 
 
 
@@ -82,6 +92,8 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
         Route::get('/add-product', 'create')->name('add_product');
         Route::post('/store-product', 'store')->name('store_product');
         Route::get('/delete-product/{product}', 'destroy')->name('delete_product');
+        Route::get('/edit-product/{product}', 'edit')->name('edit_product'); // <-- Change here
+        Route::post('/update-product/{product}', 'update')->name('update_product'); // <-- Change here
     });
 
     Route::controller(SliderController::class)->group(function () {
@@ -103,6 +115,8 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
 });
 
      Route::get('/about' , [AboutController::class, 'index'])->name('about');
+     Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+     Route::get('/blog', [BlogControoler::class, 'index'])->name('blog');
 
 Route::get('/admin/login', [AdminController::class, 'login'])->middleware('guest');
 
@@ -144,3 +158,5 @@ Route::get('/vendor-list', [HomeController::class, 'vendor_list'])->name('vendor
 Route::get('/category/{category}', [HomeController::class, 'product_by_category'])->name('product_by_category');
 Route::get('/{vendor}', [HomeController::class, 'vendor_details'])->name('vendor_details');
 Route::get('/{product}/{slug}', [FrontendProductController::class, 'product_details'])->name('product_details');
+
+

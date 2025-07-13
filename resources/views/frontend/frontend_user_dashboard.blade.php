@@ -123,9 +123,9 @@
                                         <h3 class="mb-0">Orders tracking</h3>
                                     </div>
                                     <div class="card-body contact-from-area">
-                                        <p>To track your order please enter your OrderID in the box below and press
-                                            "Track" button. This was given to you on your receipt and in the
-                                            confirmation email you should have received.</p>
+                                        <p>Pour suivre votre commande, veuillez entrer votre ID de commande dans le champ ci-dessous et appuyer sur le bouton "Suivre". Cela vous a été donné sur votre reçu et dans l'email de confirmation que vous devriez avoir reçu.
+
+                                        </p>
                                         <div class="row">
                                             <div class="col-lg-8">
                                                 <form class="contact-form-style mt-30 mb-50" action="" method="post">
@@ -133,13 +133,13 @@
                                                     <div class="input-style mb-20">
                                                         <label>Order ID</label>
                                                         <input name="order-id"
-                                                            placeholder="Found in your order confirmation email"
+                                                            placeholder="Trouvé dans votre email de confirmation de commande"
                                                             type="text" />
                                                     </div>
                                                     <div class="input-style mb-20">
                                                         <label>Billing email</label>
                                                         <input name="billing-email"
-                                                            placeholder="Email you used during checkout" type="email" />
+                                                            placeholder="L'email que vous avez utilisé lors du paiement" type="email" />
                                                     </div>
                                                     <button class="submit submit-auto-width"
                                                         type="submit">Track</button>
@@ -258,7 +258,7 @@
                                                 <div class="col-md-12">
                                                     <button type="submit"
                                                         class="btn btn-fill-out submit font-weight-bold" name="submit"
-                                                        value="Submit">Save Change</button>
+                                                        value="Submit">Enregistrer les modifications</button>
                                                 </div>
                                             </div>
                                         </form>

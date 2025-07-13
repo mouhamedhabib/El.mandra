@@ -11,7 +11,7 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Data Table</li>
+                    <li class="breadcrumb-item active" aria-current="page">Table de données</li>
                 </ol>
             </nav>
         </div>
@@ -23,7 +23,7 @@
         </div>
     </div>
     <!--end breadcrumb-->
-    <h6 class="mb-0 text-uppercase">DataTable Example</h6>
+    <h6 class="mb-0 text-uppercase">Exemple de table de données</h6>
     <hr />
     <div class="card">
         <div class="card-body">
@@ -31,7 +31,7 @@
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Serial</th>
+                            <th>Série</th>
                             <th>Category</th>
                             <th>Sub Category</th>
                             <th>Action</th>
@@ -46,9 +46,9 @@
                             <td>{{ $sub_category->name }}</td>
                             <td>
                                 <a href="{{ route('admin.edit_sub_category',$sub_category->id) }}"
-                                    class="btn btn-sm btn-primary">edit</a>
+                                    class="btn btn-sm btn-primary">Modifier</a>
                                 <a href="javascript:;" onclick="sure({{ $sub_category->id }})"
-                                    class="btn btn-sm btn-danger">delete</a>
+                                    class="btn btn-sm btn-danger">Supprimer</a>
                             </td>
 
                         </tr>
@@ -57,10 +57,11 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>Serial</th>
-                            <th>Category</th>
-                            <th>Sub Category</th>
+                            <th>Série</th>
+                            <th>Catégorie</th>
+                            <th>Sous-catégorie</th>
                             <th>Action</th>
+
 
                         </tr>
                     </tfoot>
@@ -76,8 +77,8 @@
 <script>
     function sure(id){
                 swal({
-                title: "Are you sure?",
-                text: "Once deleted, you will not be able to recover this imaginary file!",
+                title: "Êtes-vous sûr ?",
+                text: "Une fois supprimé, vous ne pourrez pas récupérer ce fichier imaginaire !",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,

@@ -8,9 +8,10 @@
                 <div class="col-lg-5 col-md-8">
                     <div class="login_wrap background-white p-4 shadow-sm rounded">
                         <div class="heading_s1 text-center mb-4">
-                            <h2 class="mb-2">Login</h2>
-                            <p class="font-sm">Don't have an account? <a href="{{ route('register') }}">Register here</a></p>
+                            <h2 class="mb-2">Connexion</h2>
+                            <p class="font-sm">Vous n'avez pas de compte ? <a href="{{ route('register') }}">Inscrivez-vous ici</a></p>
                         </div>
+                        
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
 
@@ -30,7 +31,7 @@
 
                             
                             <div class="form-group mb-4">
-                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                <button type="submit" class="btn btn-primary btn-block">Connexion</button>
                             </div>
 
                             <div class="text-center">

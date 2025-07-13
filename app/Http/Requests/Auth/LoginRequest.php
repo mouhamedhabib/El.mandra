@@ -49,7 +49,7 @@ class LoginRequest extends FormRequest
 
             throw ValidationException::withMessages([
                 // 'email' => trans('auth.failed'),
-                'email' => 'These credentials do not match our records / You\'re Account didnot active yet'
+                'email' => 'Ces identifiants ne correspondent pas à nos données / Votre compte n\'est pas encore activé'
             ]);
         }
 

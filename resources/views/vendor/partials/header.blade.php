@@ -5,7 +5,7 @@
             </div>
             <div class="search-bar flex-grow-1">
                 <div class="position-relative search-bar-box">
-                    <input type="text" class="form-control search-control" placeholder="Type to search...">
+                    <input type="text" class="form-control search-control" placeholder="Tapez pour chercher...">
                     <span class="position-absolute top-50 search-show translate-middle-y"><i
                             class='bx bx-search'></i></span>
                     <span class="position-absolute top-50 search-close translate-middle-y"><i
@@ -374,13 +374,13 @@
                                 class="bx bx-cog"></i><span>Change Password</span></a>
                     </li>
                     <li><a class="dropdown-item" href="javascript:;"><i
-                                class='bx bx-home-circle'></i><span>Dashboard</span></a>
+                                class='bx bx-home-circle'></i><span>Tableau de bord</span></a>
                     </li>
                     <li><a class="dropdown-item" href="javascript:;"><i
-                                class='bx bx-dollar-circle'></i><span>Earnings</span></a>
+                                class='bx bx-dollar-circle'></i><span>Revenus</span></a>
                     </li>
                     <li><a class="dropdown-item" href="javascript:;"><i
-                                class='bx bx-download'></i><span>Downloads</span></a>
+                                class='bx bx-download'></i><span>Téléchargements</span></a>
                     </li>
                     <li>
                         <div class="dropdown-divider mb-0"></div>
@@ -389,7 +389,7 @@
                         <form action="{{ route('logout') }}" method="post">
                             @csrf
                             <button type='submit' class="dropdown-item" href="javascript:;"><i
-                                    class='bx bx-log-out-circle'></i><span>Logout</span></button>
+                                    class='bx bx-log-out-circle'></i><span>Se déconnecter</span></button>
                         </form>
                     </li>
                 </ul>

@@ -1,10 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Découvrez les meilleurs produits artisanaux tunisiens : huile d'olive, harissa, épices, et bien plus. El Mandra vous connecte au goût authentique de la Tunisie.">
+
+    <meta name="keywords" content="el mandra, produits tunisiens, huile d'olive, épices, harissa, produits du terroir, chhiwat tounes, produits naturels, produits bio tunisie">
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="El Mandra">
+
     <!--favicon-->
     <link rel="icon" href="{{asset('admin')}}/assets/images/favicon-32x32.png" type="image/png" />
     <!--plugins-->
@@ -26,7 +33,7 @@
     <link rel="stylesheet" href="{{asset('admin')}}/assets/css/header-colors.css" />
     <link rel="stylesheet" href="{{asset('admin')}}/assets/css/toastr.min.css" />
 
-    <title>Rukada - Responsive Bootstrap 5 Admin Template</title>
+    <title>El.Mandra</title>
 </head>
 
 <body>

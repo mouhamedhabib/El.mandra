@@ -13,13 +13,14 @@
         <div class="col-lg-4-5">
             <div class="shop-product-fillter">
                 <div class="totall-product">
-                    <p>We found <strong class="text-brand">{{ $vendor->products->count() }}</strong> items for you!</p>
+                    <p>Nous avons trouvé <strong class="text-brand">{{ $vendor->products->count() }}</strong> articles pour vous !</p>
+
                 </div>
                 <div class="sort-by-product-area">
                     <div class="sort-by-cover mr-10">
                         <div class="sort-by-product-wrap">
                             <div class="sort-by">
-                                <span><i class="fi-rs-apps"></i>Show:</span>
+                                <span><i class="fi-rs-apps"></i>Afficher:</span>
                             </div>
                             <div class="sort-by-dropdown-wrap">
                                 <span> 50 <i class="fi-rs-angle-small-down"></i></span>
@@ -242,7 +243,7 @@
                 </ul>
             </div>
             <!-- Fillter By Price -->
-            <div class="sidebar-widget price_range range mb-30">
+            <div class="sidebar-widget price_range range mb-30" style="display: none">
                 <h5 class="section-title style-1 mb-30">Fill by price</h5>
                 <div class="price-filter">
                     <div class="price-filter-inner">
@@ -295,10 +296,11 @@
                 <div class="banner-text">
                     <span>Oganic</span>
                     <h4>
-                        Save 17% <br />
-                        on <span class="text-brand">Oganic</span><br />
-                        Juice
+                        Économisez 17% <br />
+                        sur le <span class="text-brand">Produit naturel</span><br />
+                        de saison
                     </h4>
+                    
                 </div>
             </div>
         </div>

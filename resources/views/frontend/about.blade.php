@@ -1,76 +1,45 @@
+@extends('frontend.layout.frontend_master')
+@section('frontend')
 
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 text-justify ">
+                <h6 class="text-muted mb-3">À propos de nous</h6>
+                <h2 class="fw-bold text-success mb-4">L’histoire de Elmandra, un goût de tradition</h2>
+                <p class="mb-4  ">Depuis notre création, Elmandra s'engage à préserver et promouvoir les richesses culinaires du terroir tunisien. À travers notre plateforme, nous mettons en lumière les produits locaux faits maison, issus d’un savoir-faire authentique, transmis de génération en génération.
 
-<section class="py-24 relative xl:mr-0 lg:mr-5 mr-0">
-    <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-        <div class="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
-            <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
-                <div class="w-full flex-col justify-center items-start gap-8 flex">
-                    <div class="flex-col justify-start lg:items-start items-center gap-4 flex">
-                        <h6 class="text-gray-400 text-base font-normal leading-relaxed">About Us</h6>
-                        <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                            <h2
-                                class="text-indigo-700 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                                The Tale of Our Achievement Story</h2>
-                            <p
-                                class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                                Our achievement story is a testament to teamwork and perseverance. Together, we've
-                                overcome challenges, celebrated victories, and created a narrative of progress and
-                                success.</p>
+                    Notre mission est simple : reconnecter les Tunisiens – où qu’ils soient – aux saveurs de leur enfance, aux arômes des régions, et à la qualité d’un produit fabriqué avec amour. Chez Elmandra, chaque article est soigneusement sélectionné pour sa qualité, son origine naturelle et son impact positif sur l’économie locale.
+                    
+                    Nous croyons profondément que le futur du commerce passe par un retour à l’authenticité, au consommer local, et à la valorisation des artisans et producteurs de nos régions. Elmandra n’est pas seulement un site de vente en ligne, c’est une communauté de passionnés, un pont entre tradition et innovation, entre ville et campagne, entre le passé et l’avenir.
+                    
+                    Bienvenue chez Elmandra – le goût de la Tunisie, livré jusqu’à votre porte.
+                    
+                    
+                    </p>
+                <div class="row text-center mb-4">
+                    <div class="col-6 col-md-6 mb-3">
+                        <div class="border rounded p-3 h-100">
+                            <h4 class="text-success fw-bold mb-1">120+ Produits</h4>
+                            <p class="mb-0 text-muted small">Artisanaux et 100% tunisiens</p>
                         </div>
                     </div>
-                    <div class="w-full flex-col justify-center items-start gap-6 flex">
-                        <div class="w-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
-                            <div
-                                class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">33+ Years</h4>
-                                <p class="text-gray-500 text-base font-normal leading-relaxed">Influencing Digital
-                                    Landscapes Together</p>
-                            </div>
-                            <div
-                                class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">125+ Projects
-                                </h4>
-                                <p class="text-gray-500 text-base font-normal leading-relaxed">Excellence Achieved
-                                    Through Success</p>
-                            </div>
-                        </div>
-                        <div class="w-full h-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
-                            <div
-                                class="w-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">26+ Awards</h4>
-                                <p class="text-gray-500 text-base font-normal leading-relaxed">Our Dedication to
-                                    Innovation Wins Understanding</p>
-                            </div>
-                            <div
-                                class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">99% Happy
-                                    Clients</h4>
-                                <p class="text-gray-500 text-base font-normal leading-relaxed">Mirrors our Focus on
-                                    Client Satisfaction.</p>
-                            </div>
+                    <div class="col-6 col-md-6 mb-3">
+                        <div class="border rounded p-3 h-100">
+                            <h4 class="text-success fw-bold mb-1">98% Clients satisfaits</h4>
+                            <p class="mb-0 text-muted small">Fidélité et confiance</p>
                         </div>
                     </div>
                 </div>
-                <button
-                    class="sm:w-fit w-full group px-3.5 py-2 bg-indigo-50 hover:bg-indigo-100 rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out justify-center items-center flex">
-                    <span
-                        class="px-1.5 text-indigo-600 text-sm font-medium leading-6 group-hover:-translate-x-0.5 transition-all duration-700 ease-in-out">Read
-                        More</span>
-                    <svg class="group-hover:translate-x-0.5 transition-all duration-700 ease-in-out"
-                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path d="M6.75265 4.49658L11.2528 8.99677L6.75 13.4996" stroke="#4F46E5" stroke-width="1.6"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
+                <a href="{{ route('vendor.register') }}" class="btn btn-success px-4">Rejoignez notre réseau d’artisans</a>
             </div>
-            <div class="w-full lg:justify-start justify-center items-start flex">
-                <div
-                    class="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 relative">
-                    <img class="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
-                        src="https://pagedone.io/asset/uploads/1717742431.png" alt="about Us image" />
+            <div class="col-lg-6 text-center">
+                <div class="rounded shadow overflow-hidden">
+                    <img src="{{ asset('frontend') }}/assets/imgs/theme/couc.jpg" alt="" />
                 </div>
             </div>
         </div>
     </div>
 </section>
-                                        
+
+@endsection

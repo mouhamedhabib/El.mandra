@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="{{asset('admin')}}/assets/css/semi-dark.css" />
     <link rel="stylesheet" href="{{asset('admin')}}/assets/css/header-colors.css" />
     <link rel="stylesheet" href="{{asset('admin')}}/assets/css/toastr.min.css" />
-    <title>Rukada - Responsive Bootstrap 5 Admin Template</title>
+    <title>El.Mandra</title>
 </head>
 
 <body>

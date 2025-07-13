@@ -4,14 +4,14 @@
 <div class="page-content">
     <!--breadcrumb-->
     <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-        <div class="breadcrumb-title pe-3">Edit Sub Category</div>
+        <div class="breadcrumb-title pe-3">Modifier la sous-catégorie</div>
         <div class="ps-3">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}"><i
                                 class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Edit Sub Category</li>
+                    <li class="breadcrumb-item active" aria-current="page">Modifier la sous-catégorie</li>
                 </ol>
             </nav>
         </div>
@@ -31,7 +31,7 @@
 
                                 <div class="row mb-3">
                                     <div class="col-sm-3">
-                                        <h6 class="mb-0">Sub Category Name</h6>
+                                        <h6 class="mb-0">Nom de la sous-catégorie</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
                                         <input type="text" class="form-control"
@@ -44,11 +44,11 @@
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-sm-3">
-                                        <h6 class="mb-0">Category Name</h6>
+                                        <h6 class="mb-0">Nom de la catégorie</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
                                         <select class="form-control" id='category' name="category_id">
-                                            <option value="" disabled selected> Choose option</option>
+                                            <option value="" disabled selected> Choisir une option</option>
                                             @foreach ($categories as $category)
 
 
@@ -67,7 +67,7 @@
                                 <div class="row">
                                     <div class="col-sm-3"></div>
                                     <div class="col-sm-9 text-secondary">
-                                        <input type="submit" class="btn btn-primary px-4" value="Save Changes" />
+                                        <input type="submit" class="btn btn-primary px-4" value="Enregistrer les modifications" />
                                     </div>
                                 </div>
                             </div>

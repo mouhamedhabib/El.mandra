@@ -11,19 +11,19 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Data Table</li>
+                    <li class="breadcrumb-item active" aria-current="page">Table de données</li>
                 </ol>
             </nav>
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <a href="{{ route('admin.add_category') }}" class="btn btn-primary">Add Category</a>
+                <a href="{{ route('admin.add_category') }}" class="btn btn-primary">Ajouter une catégorie</a>
 
             </div>
         </div>
     </div>
     <!--end breadcrumb-->
-    <h6 class="mb-0 text-uppercase">DataTable Example</h6>
+    <h6 class="mb-0 text-uppercase">Exemple de table de données</h6>
     <hr />
     <div class="card">
         <div class="card-body">
@@ -31,10 +31,11 @@
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Serial</th>
-                            <th>Name</th>
+                            <th>Série</th>
+                            <th>Nom</th>
                             <th>Image</th>
                             <th>Action</th>
+
 
                         </tr>
                     </thead>
@@ -46,9 +47,9 @@
                             <td><img width="100" src="{{ asset('uploaded/categories/'.$category->image) }}"></td>
                             <td>
                                 <a href="{{ route('admin.edit_category',$category->id) }}"
-                                    class="btn btn-sm btn-primary">edit</a>
+                                    class="btn btn-sm btn-primary">Modifier</a>
                                 <a href="javascript:;" onclick="sure({{ $category->id }})"
-                                    class="btn btn-sm btn-danger">delete</a>
+                                    class="btn btn-sm btn-danger">Supprimer</a>
                             </td>
 
                         </tr>
@@ -57,9 +58,10 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
+                            <th>Nom</th>
+                            <th>Poste</th>
+                            <th>Bureau</th>
+
 
                         </tr>
                     </tfoot>
@@ -75,8 +77,8 @@
 <script>
     function sure(id){
                 swal({
-                title: "Are you sure?",
-                text: "Once deleted, you will not be able to recover this imaginary file!",
+                title: "Êtes-vous sûr ?",
+                text: "Une fois supprimé, vous ne pourrez pas récupérer ce fichier imaginaire !",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,

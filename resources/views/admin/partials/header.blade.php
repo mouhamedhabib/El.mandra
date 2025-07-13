@@ -5,7 +5,7 @@
             </div>
             <div class="search-bar flex-grow-1">
                 <div class="position-relative search-bar-box">
-                    <input type="text" class="form-control search-control" placeholder="Type to search...">
+                    <input type="text" class="form-control search-control" placeholder="Tapez pour chercher...">
                     <span class="position-absolute top-50 search-show translate-middle-y"><i
                             class='bx bx-search'></i></span>
                     <span class="position-absolute top-50 search-close translate-middle-y"><i
@@ -19,9 +19,9 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown dropdown-large">
-                        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button"
+                        {{-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
-                        </a>
+                        </a> --}}
                         <div class="dropdown-menu dropdown-menu-end">
                             <div class="row row-cols-3 g-3 p-3">
                                 <div class="col text-center">
@@ -127,9 +127,9 @@
                                         <div class="notify bg-light-info text-info"><i class="bx bx-home-circle"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="msg-name">New Product Approved <span class="msg-time float-end">2
+                                            <h6 class="msg-name">Nouveau produit approuvé <span class="msg-time float-end">2
                                                     hrs ago</span></h6>
-                                            <p class="msg-info">Your new product has approved</p>
+                                            <p class="msg-info">Votre nouveau produit a été approuvé</p>
                                         </div>
                                     </div>
                                 </a>

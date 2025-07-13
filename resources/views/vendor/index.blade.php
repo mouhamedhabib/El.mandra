@@ -19,7 +19,7 @@
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <div class="d-flex align-items-center text-white">
-                        <p class="mb-0">Total Orders</p>
+                        <p class="mb-0">Total des commandes</p>
                         <p class="mb-0 ms-auto">+4.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <div class="d-flex align-items-center text-white">
-                        <p class="mb-0">Total Revenue</p>
+                        <p class="mb-0">Revenu total</p>
                         <p class="mb-0 ms-auto">+1.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                     </div>
                 </div>

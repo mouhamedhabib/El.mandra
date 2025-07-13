@@ -18,7 +18,7 @@
     <link href="{{ asset('admin') }}/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('admin') }}/assets/css/app.css" rel="stylesheet">
     <link href="{{ asset('admin') }}/assets/css/icons.css" rel="stylesheet">
-    <title>Rukada - Responsive Bootstrap 5 Admin Template</title>
+    <title>El.Mandra</title>
 </head>
 
 <body class="bg-login">

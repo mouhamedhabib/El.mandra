@@ -31,7 +31,7 @@
 
                                 <div class="row mb-3">
                                     <div class="col-sm-3">
-                                        <h6 class="mb-0">Sub Category Name</h6>
+                                        <h6 class="mb-0">Nom de la sous-catégorie</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
                                         <input type="text" class="form-control" value="{{ old('name')}}" name="name"
@@ -44,11 +44,11 @@
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-sm-3">
-                                        <h6 class="mb-0">Category Name</h6>
+                                        <h6 class="mb-0">Nom de la catégorie</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
                                         <select class="form-control" id='category' name="category_id">
-                                            <option value="" disabled selected> Choose option</option>
+                                            <option value="" disabled selected> Choisir une option</option>
                                             @foreach ($categories as $category)
 
 
@@ -66,7 +66,7 @@
                                 <div class="row">
                                     <div class="col-sm-3"></div>
                                     <div class="col-sm-9 text-secondary">
-                                        <input type="submit" class="btn btn-primary px-4" value="Save Changes" />
+                                        <input type="submit" class="btn btn-primary px-4" value="Enregistrer les modifications" />
                                     </div>
                                 </div>
                             </div>

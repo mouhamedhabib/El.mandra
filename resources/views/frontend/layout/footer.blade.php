@@ -6,14 +6,14 @@
                     <div class="position-relative newsletter-inner">
                         <div class="newsletter-content">
                             <h2 class="mb-20">
-                                Stay home & get your daily <br />
-                                needs from our shop
+                                Restez chez vous et recevez vos <br />
+                                besoins quotidiens de notre boutique
                             </h2>
-                            <p class="mb-45">Start You'r Daily Shopping with <span class="text-brand">Nest
-                                    Mart</span></p>
+                            <p class="mb-45">Commencez vos achats quotidiens avec <span class="text-brand">El Mandra</span></p>
+                            
                             <form class="form-subcriber d-flex">
                                 <input type="email" placeholder="Votre adresse email" />
-                                <button class="btn" type="submit">Subscribe</button>
+                                <button class="btn" type="submit">S'abonner</button>
                             </form>
                         </div>
                         <img src="{{asset('frontend')}}/assets/imgs/banner/banner-9.png" alt="newsletter" />
@@ -108,7 +108,7 @@
             </div>
         </div>
     </section>
-    <section class="section-padding footer-mid">
+    <section class="section-padding footer-mid" style="display:none;">
         <div class="container pt-15 pb-20">
             <div class="row">
                 <div class="col">
@@ -192,31 +192,38 @@
                 <div class="footer-bottom"></div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6">
-                <p class="font-sm mb-0">&copy; 2022, <strong class="text-brand">Nest</strong> - HTML Ecommerce
-                    Template <br />All rights reserved</p>
+                <p class="font-sm mb-0">&copy; 2025, <strong class="text-brand">El Mandra</strong> - Site e-commerce local <br />Tous droits réservés</p>
+
+
             </div>
             <div class="col-xl-4 col-lg-6 text-center d-none d-xl-block">
-
-                <div class="hotline d-lg-inline-flex">
-                    <img src="{{asset('frontend')}}/assets/imgs/theme/icons/phone-call.svg" alt="hotline" />
-                    <p>1900 - 8888<span>24/7 Support Center</span></p>
+                <div class="hotline d-lg-flex flex-column align-items-center gap-2">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="{{ asset('frontend') }}/assets/imgs/theme/icons/phone-call.svg" alt="hotline" />
+                        <p class="mb-0">31 100 111<br /><span class="text-muted">Centre d’assistance 24h/24</span></p>
+                    </div>
+            
+                    <a href="{{ route('vendor.register') }}" class="btn btn-sm btn-warning mt-1 px-1 ">
+                        Rejoignez-nous comme Vendeur
+                    </a>
                 </div>
             </div>
+            
             <div class="col-xl-4 col-lg-6 col-md-6 text-end d-none d-md-block">
                 <div class="mobile-social-icon">
-                    <h6>Follow Us</h6>
-                    <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-facebook-white.svg"
+                    <h6>Suivez-nous</h6>
+                    <a href="https://www.facebook.com/profile.php?id=61575866926969"target="_blank"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-facebook-white.svg"
                             alt="" /></a>
-                    <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-twitter-white.svg"
+                    {{-- <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-twitter-white.svg"
+                            alt="" /></a> --}}
+                    <a href="https://www.instagram.com/el.mandra25/"target="_blank"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-instagram-white.svg"
                             alt="" /></a>
-                    <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-instagram-white.svg"
-                            alt="" /></a>
-                    <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-pinterest-white.svg"
-                            alt="" /></a>
-                    <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-youtube-white.svg"
-                            alt="" /></a>
+                    {{-- <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-pinterest-white.svg"
+                            alt="" /></a> --}}
+                    {{-- <a href="#"><img src="{{asset('frontend')}}/assets/imgs/theme/icons/icon-youtube-white.svg"
+                            alt="" /></a> --}}
                 </div>
-                <p class="font-sm">Up to 15% discount on your first subscribe</p>
+                <p class="font-sm">-15% sur votre 1ère commande Mandra</p>
             </div>
         </div>
     </div>
