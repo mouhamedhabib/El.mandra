@@ -19,7 +19,7 @@
 Voici les étapes pour installer et lancer le projet localement avec Laravel Sail :
 
 1. **Cloner le dépôt**  
-   `git clone <change>`  
+   `git clone https://github.com/mouhamedhabib/El.mandra.git`  
    `cd El.Mandra`
 
 2. **Installation des dépendances PHP**  
