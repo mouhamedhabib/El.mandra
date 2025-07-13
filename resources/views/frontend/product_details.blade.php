@@ -170,15 +170,15 @@
                                 <a class="nav-link active" id="Description-tab" data-bs-toggle="tab"
                                     href="#Description">Description</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" style="display: none;">
                                 <a class="nav-link" id="Additional-info-tab" data-bs-toggle="tab"
                                     href="#Additional-info">Additional info</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item"  style='display: none';>
                                 <a class="nav-link" id="Vendor-info-tab" data-bs-toggle="tab"
                                     href="#Vendor-info">Vendor</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item"  style='display: none;'>
                                 <a class="nav-link" id="Reviews-tab" data-bs-toggle="tab" href="#Reviews">Avis clients
                                     (3)</a>
                             </li>

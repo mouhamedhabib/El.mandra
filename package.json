@@ -29,6 +29,8 @@
         "test": "tests"
     },
     "dependencies": {
+        "@sentry/browser": "^9.35.0",
+        "@sentry/replay": "^7.116.0",
         "any-promise": "^1.3.0",
         "anymatch": "^3.1.3",
         "arg": "^5.0.2",

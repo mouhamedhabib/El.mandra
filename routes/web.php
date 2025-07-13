@@ -32,6 +32,11 @@ Route::get('/test', function () {
     abort(503);
 });
 
+Route::get('/debug-sentry', function () {
+    throw new Exception('My first Sentry error!');
+});
+
+
 
 
 Route::middleware('auth')->group(function () {
